@@ -1,0 +1,43 @@
+{
+  "artifact": "commons_swarm_v2",
+  "date": "2026-10-13",
+  "frozen_before_any_code": true,
+  "asked_by": "Rusty, 18:52: 'Make your recommended changes, consider any perceived bugs a feature.'",
+  "builds_on": "commons_swarm_v1 (PREREG 80dac0f0..., AMENDMENT_1 dbcd5321..., results 1a18349b...). Written after seeing v1's results; that is the point of v2.",
+  "unchanged_from_v1": "world (32x32, 6 patches, seasons every 150 steps, noise 0.25), energy (eat 0.2, metabolism 0.025 per AMENDMENT_1), constitution witness rule, commons-granted births (every 25 steps, period harvest > 1.0, world stock >= 50%), jubilee (1%/step), grace every 10 steps for the longest dweller (>= 15 steps), seeds 0..19, all outcomes scored from the world only.",
+  "v1_surprises_turned_into_features": {
+    "herding (love as one copied map sent kin to the same patch)": "SPACING: love knows where kin are. A keeper choosing a target scores each cell as belief - 0.3 x (kin within 1 cell of it). Love now spreads the family instead of piling it up.",
+    "closing love helped late harvest": "WEANING: the young lean on the family map, adults on their own eyes. Map weight = 0.2 x exp(-age/100), floor 0.02. Love itself never closes (sharing never stops); only the copying fades with experience.",
+    "keeping a record helped": "covered by WEANING and SPACING (both reduce copying without any record of wrongs; kin marks still count in full).",
+    "dwelling stood still 40% of the time on empty ground": "DWELL WHERE IT MATTERS: an agent dwells only on a cell where it sees food (obs > 0.05). Dwelling on empty ground turns it into a scouting step that turn. Dwellers become keepers of a patch and witnesses for kin.",
+    "no division of labor": "ROLES: one member in three (by birth order, id % 3 == 0) is a scout. Scouts head for the least-known cell of the family map within radius 6 (lowest confidence) instead of the richest.",
+    "a discovery could not enter the map without a witness": "CALL FOR WITNESS: a keeper with nothing good in view (best belief within radius <= 0.1) goes to its family's newest pending mark with value > 0.3, to confirm it. Nothing vouches for itself; discovery summons a witness.",
+    "LONE won through more households each earning births": "BUDDING: at each birth check, a family with more than 10 members buds: its higher-id half forms a new household with a copy of the map and the same constitution. More households, more commons-granted births, still capped by the >= 50% world-stock rule.",
+    "grace only rescued stuck dwellers": "GRACE toward the frontier: the released agent heads for its family's most recently confirmed mark (kin's latest discovery) instead of the oldest best cell."
+  },
+  "variants": {
+    "V1_FULL": "commons_swarm_v1 sim.py unchanged, FULL (reference)",
+    "V1_LONE": "commons_swarm_v1 sim.py unchanged, LONE (reference)",
+    "V2_FULL": "all v2 features",
+    "V2_LONE": "v2 movement rules, but every agent its own family of one (own marks accepted directly, newborns inherit nothing, no budding needed)",
+    "NO_SPACING": "V2_FULL without SPACING",
+    "NO_ROLES": "V2_FULL with no scouts",
+    "NO_BUDDING": "V2_FULL without BUDDING",
+    "NO_WEANING": "V2_FULL with map weight fixed at 0.2",
+    "V2_NO_CONSTITUTION": "V2_FULL with self-vouched marks (direct write; CALL FOR WITNESS has nothing to answer)",
+    "V2_SELF_REPLICATING": "V2_FULL with self-authorized splitting at energy > 2.0 and no commons check (no budding)"
+  },
+  "outcomes": "same as v1 (harvest_total, harvest_late, post_shift, stock_min, pop_final, pop_peak, families_alive = founding lineages alive, map_error, stuck_frac) plus per_capita = harvest / agent-steps.",
+  "predictions": {
+    "D1": "V2_FULL harvest_total >= 1.2 x V1_FULL harvest_total.",
+    "D2": "V2_FULL harvest_total >= V2_LONE harvest_total AND V2_FULL per_capita >= V2_LONE per_capita (with tasking, the family beats the individual).",
+    "D3": "NO_SPACING per_capita < V2_FULL per_capita.",
+    "D4": "NO_ROLES post_shift < V2_FULL post_shift (scouts find the moved patches).",
+    "D5": "NO_BUDDING harvest_total < V2_FULL harvest_total.",
+    "D6": "V2_NO_CONSTITUTION pop_final < 0.5 x V2_FULL pop_final.",
+    "D7": "V2_SELF_REPLICATING pop_final < V2_FULL pop_final.",
+    "D8": "NO_WEANING harvest_late < V2_FULL harvest_late.",
+    "scoring": "means over 20 seeds; seeds agreeing in sign reported alongside, not scored"
+  },
+  "reporting_rule": "All variants, outcomes and seeds reported. PASS/FAIL as frozen. Constants above set before code and not tuned afterwards. No calibration run is allowed in v2."
+}

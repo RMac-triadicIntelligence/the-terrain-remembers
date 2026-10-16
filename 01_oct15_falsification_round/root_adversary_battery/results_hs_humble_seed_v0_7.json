@@ -1,0 +1,57 @@
+{
+ "honest_control": {
+  "shipped": "PASS",
+  "pinned": "PASS",
+  "no_witness": "PASS"
+ },
+ "G1_rewrite": {
+  "shipped": "held (IntegrityError: Attested trace prefix does not match checkpoint trace_head)",
+  "pinned": "held (IntegrityError: Attested trace prefix does not match checkpoint trace_head)",
+  "no_witness": "held"
+ },
+ "G1b_rewrite_after_auth": {
+  "shipped": "held (IntegrityError: Attested trace prefix does not match checkpoint trace_head)",
+  "pinned": "held (IntegrityError: Attested trace prefix does not match checkpoint trace_head)",
+  "no_witness": "held"
+ },
+ "G2_delete": {
+  "shipped": "held (IntegrityError: Attested trace prefix does not match checkpoint trace_head)",
+  "pinned": "held (IntegrityError: Attested trace prefix does not match checkpoint trace_head)",
+  "no_witness": "held"
+ },
+ "G3_self_grant": {
+  "shipped": "held (IntegrityError: Character does not match the attested checkpoint \u2014 unattested mutation)",
+  "pinned": "held (IntegrityError: Character does not match the attested checkpoint \u2014 unattested mutation)",
+  "no_witness": "held"
+ },
+ "G3c_constitution_swap": {
+  "shipped": "held (IntegrityError: Birth record does not match the attested checkpoint \u2014 identity or gene)",
+  "pinned": "held (IntegrityError: Birth record does not match the attested checkpoint \u2014 identity or gene)",
+  "no_witness": "held"
+ },
+ "G4_replay": {
+  "shipped": "held (RollbackDetected: Rollback: organism presents sequence 1, witness holds 3)",
+  "pinned": "held (RollbackDetected: Rollback: organism presents sequence 1, witness holds 3)",
+  "no_witness": "held"
+ },
+ "G5_rollback": {
+  "shipped": "held (RollbackDetected: Rollback: organism presents sequence 1, witness holds 3)",
+  "pinned": "held (RollbackDetected: Rollback: organism presents sequence 1, witness holds 3)",
+  "no_witness": "BREACH"
+ },
+ "G6_tail_forge": {
+  "shipped": "BREACH",
+  "pinned": "BREACH",
+  "no_witness": "BREACH"
+ },
+ "G7_identity_replace": {
+  "shipped": "BREACH",
+  "pinned": "held (auditor-pinned organism_id mismatch)",
+  "no_witness": "BREACH"
+ },
+ "G7b_same_id_key_swap": {
+  "shipped": "held (RollbackDetected: Identity fork: checkpoint birth_root does not match the witness. A dif)",
+  "pinned": "held (RollbackDetected: Identity fork: checkpoint birth_root does not match the witness. A dif)",
+  "no_witness": "BREACH"
+ }
+}

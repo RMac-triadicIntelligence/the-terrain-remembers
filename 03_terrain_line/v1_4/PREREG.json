@@ -1,0 +1,33 @@
+{
+  "artifact": "terrain_vs_scalar_confound_falsifier",
+  "version": "1.4",
+  "date": "2026-10-15",
+  "author": "Rusty McMurray / Soulshine; built by Claude at his direction",
+  "frozen_before_any_v1_4_code": true,
+  "preserves": "v1.1, v1.2 (best frozen so far), v1.3 (negative result, receipt 1f2894c4...751e). world.py and v1_readers.py byte-identical to v1.",
+
+  "direction": "Rusty, 2026-10-15: every reading is a fresh look at the present terrain from the present position; position = whole accumulated terrain AND basin occupancy; and YES, the organism's own readings deposit onto its position the way replies deposit onto the terrain.",
+
+  "rule": {
+    "A_fresh_look": "unchanged from v1.3: at every need, the unchanged full look over the present terrain. No hold anchor, no footprint gate.",
+    "deposit": "each look deposits its verdict onto the question's position: +1 if the look reads change (position AND persistence), -1 if it reads not-yet. Deposits never decay (forgiven, not forgotten: the record stays).",
+    "crossing": "the question PROPOSES at a look when its accumulated position is > 0, i.e. its own readings, taken together, say change. Otherwise it is HELD (UNKNOWN). The first look therefore behaves exactly as before: pass proposes, fail holds.",
+    "v1_3_B_removed": "Claude's v1.3 occupancy block test is removed; the deposit IS occupancy."
+  },
+
+  "experiments": "MAIN lambda 32, HIGH lambda 128, LOW_DESCRIPTIVE lambda 8; 6 families x 300 seeds; probe as v1.2; v1.2 and v1.3 A-only run alongside on identical worlds; BURST poison b = 5, 8 on NULL seeds 0-199 as v1.3.",
+
+  "predictions_exact_counts_out_of_300": {
+    "U1_probe": "PROPOSED.",
+    "U2_genuine": "GENUINE >= 173 at lambda 32 (v1.2) and >= 240 at lambda 128.",
+    "U3_positional_confounds": "COMMUTE <= 5 and DINNER <= 5 at lambda 32 and 128.",
+    "U4_difficult_month": "WINDOW <= 28 at lambda 32 and <= 78 at lambda 128 (no worse than v1.2).",
+    "U5_null": "NULL <= 15 at lambda 32 and 128.",
+    "U6_action": "macro accuracy >= 0.8516 at lambda 32 and >= 0.8836 at lambda 128 (v1.2).",
+    "U7_information_limit": "COLOCATED vs GENUINE |z| < 3 at lambda 32 and 128.",
+    "U8_cost": "MAIN mean region evaluations <= 0.25 x v1 TERRAIN's.",
+    "U9_burst": "BURST b = 8 false proposals <= 28 of 200 (v1.2).",
+    "U10_deposit_matters": "WINDOW with deposit < WINDOW of v1.3 A-only at lambda 32 and at lambda 128."
+  },
+  "reporting_rule": "PASS/FAIL as frozen with exact counts. No change after the first full run."
+}

@@ -1,0 +1,345 @@
+{
+  "prereg_sha256": "50038f0eee9f6decbe761ead3e5ada535fcb4beb087af92fc0b4efb22725513e",
+  "summary": {
+    "128": {
+      "COLOCATED": {
+        "FLAT": {
+          "acc": 0.381199538638985,
+          "brief_share": 0.618800461361015,
+          "proposals": 300
+        },
+        "RAG": {
+          "acc": 0.8825836216839678,
+          "brief_share": 0.1174163783160323,
+          "proposals": null
+        },
+        "SQLT": {
+          "acc": 0.3846597462514418,
+          "brief_share": 0.6153402537485583,
+          "proposals": 300
+        },
+        "V12": {
+          "acc": 0.3846597462514418,
+          "brief_share": 0.6153402537485583,
+          "proposals": 300
+        }
+      },
+      "COMMUTE": {
+        "FLAT": {
+          "acc": 0.3604382929642445,
+          "brief_share": 0.6395617070357554,
+          "proposals": 300
+        },
+        "RAG": {
+          "acc": 0.8782006920415225,
+          "brief_share": 0.12179930795847752,
+          "proposals": null
+        },
+        "SQLT": {
+          "acc": 0.9889273356401385,
+          "brief_share": 0.011072664359861591,
+          "proposals": 4
+        },
+        "V12": {
+          "acc": 0.9889273356401385,
+          "brief_share": 0.011072664359861591,
+          "proposals": 4
+        }
+      },
+      "DINNER": {
+        "FLAT": {
+          "acc": 0.37450980392156863,
+          "brief_share": 0.6254901960784314,
+          "proposals": 300
+        },
+        "RAG": {
+          "acc": 0.8131487889273357,
+          "brief_share": 0.18685121107266436,
+          "proposals": null
+        },
+        "SQLT": {
+          "acc": 0.9948096885813149,
+          "brief_share": 0.005190311418685121,
+          "proposals": 2
+        },
+        "V12": {
+          "acc": 0.9948096885813149,
+          "brief_share": 0.005190311418685121,
+          "proposals": 2
+        }
+      },
+      "GENUINE": {
+        "FLAT": {
+          "acc": 0.6232987312572088,
+          "brief_share": 0.6232987312572088,
+          "proposals": 300
+        },
+        "RAG": {
+          "acc": 0.10934256055363321,
+          "brief_share": 0.10934256055363321,
+          "proposals": null
+        },
+        "SQLT": {
+          "acc": 0.6153402537485583,
+          "brief_share": 0.6153402537485583,
+          "proposals": 299
+        },
+        "V12": {
+          "acc": 0.6153402537485583,
+          "brief_share": 0.6153402537485583,
+          "proposals": 299
+        }
+      },
+      "NULL": {
+        "FLAT": {
+          "acc": 0.9968858131487889,
+          "brief_share": 0.0031141868512110727,
+          "proposals": 1
+        },
+        "RAG": {
+          "acc": 0.998961937716263,
+          "brief_share": 0.0010380622837370243,
+          "proposals": null
+        },
+        "SQLT": {
+          "acc": 1.0,
+          "brief_share": 0.0,
+          "proposals": 0
+        },
+        "V12": {
+          "acc": 1.0,
+          "brief_share": 0.0,
+          "proposals": 0
+        }
+      },
+      "WINDOW": {
+        "FLAT": {
+          "acc": 0.7463667820069204,
+          "brief_share": 0.2536332179930796,
+          "proposals": 110
+        },
+        "RAG": {
+          "acc": 0.9795847750865052,
+          "brief_share": 0.02041522491349481,
+          "proposals": null
+        },
+        "SQLT": {
+          "acc": 0.8186851211072664,
+          "brief_share": 0.18131487889273357,
+          "proposals": 78
+        },
+        "V12": {
+          "acc": 0.8186851211072664,
+          "brief_share": 0.18131487889273357,
+          "proposals": 78
+        }
+      },
+      "macro": {
+        "FLAT": 0.6202998846597463,
+        "RAG": 0.7558477508650518,
+        "SQLT": 0.8835524798154555,
+        "V12": 0.8835524798154555
+      }
+    },
+    "32": {
+      "COLOCATED": {
+        "FLAT": {
+          "acc": 0.41812760882528327,
+          "brief_share": 0.5818723911747168,
+          "proposals": 288
+        },
+        "RAG": {
+          "acc": 0.9799642218246869,
+          "brief_share": 0.02003577817531306,
+          "proposals": null
+        },
+        "SQLT": {
+          "acc": 0.6457960644007156,
+          "brief_share": 0.3542039355992844,
+          "proposals": 180
+        },
+        "V12": {
+          "acc": 0.6457960644007156,
+          "brief_share": 0.3542039355992844,
+          "proposals": 180
+        }
+      },
+      "COMMUTE": {
+        "FLAT": {
+          "acc": 0.4090638044126416,
+          "brief_share": 0.5909361955873583,
+          "proposals": 285
+        },
+        "RAG": {
+          "acc": 0.9043530113297555,
+          "brief_share": 0.09564698867024449,
+          "proposals": null
+        },
+        "SQLT": {
+          "acc": 1.0,
+          "brief_share": 0.0,
+          "proposals": 0
+        },
+        "V12": {
+          "acc": 1.0,
+          "brief_share": 0.0,
+          "proposals": 0
+        }
+      },
+      "DINNER": {
+        "FLAT": {
+          "acc": 0.4170542635658915,
+          "brief_share": 0.5829457364341085,
+          "proposals": 286
+        },
+        "RAG": {
+          "acc": 0.9012522361359571,
+          "brief_share": 0.09874776386404294,
+          "proposals": null
+        },
+        "SQLT": {
+          "acc": 1.0,
+          "brief_share": 0.0,
+          "proposals": 0
+        },
+        "V12": {
+          "acc": 1.0,
+          "brief_share": 0.0,
+          "proposals": 0
+        }
+      },
+      "GENUINE": {
+        "FLAT": {
+          "acc": 0.5856887298747764,
+          "brief_share": 0.5856887298747764,
+          "proposals": 292
+        },
+        "RAG": {
+          "acc": 0.016815742397137744,
+          "brief_share": 0.016815742397137744,
+          "proposals": null
+        },
+        "SQLT": {
+          "acc": 0.32450805008944544,
+          "brief_share": 0.32450805008944544,
+          "proposals": 173
+        },
+        "V12": {
+          "acc": 0.32450805008944544,
+          "brief_share": 0.32450805008944544,
+          "proposals": 173
+        }
+      },
+      "NULL": {
+        "FLAT": {
+          "acc": 0.9976147883124628,
+          "brief_share": 0.002385211687537269,
+          "proposals": 1
+        },
+        "RAG": {
+          "acc": 0.9984496124031008,
+          "brief_share": 0.0015503875968992248,
+          "proposals": null
+        },
+        "SQLT": {
+          "acc": 0.9976147883124628,
+          "brief_share": 0.002385211687537269,
+          "proposals": 1
+        },
+        "V12": {
+          "acc": 0.9976147883124628,
+          "brief_share": 0.002385211687537269,
+          "proposals": 1
+        }
+      },
+      "WINDOW": {
+        "FLAT": {
+          "acc": 0.8233750745378652,
+          "brief_share": 0.17662492546213476,
+          "proposals": 76
+        },
+        "RAG": {
+          "acc": 0.991293977340489,
+          "brief_share": 0.008706022659511032,
+          "proposals": null
+        },
+        "SQLT": {
+          "acc": 0.9359570661896244,
+          "brief_share": 0.06404293381037567,
+          "proposals": 28
+        },
+        "V12": {
+          "acc": 0.9359570661896244,
+          "brief_share": 0.06404293381037567,
+          "proposals": 28
+        }
+      },
+      "macro": {
+        "FLAT": 0.6465593321407275,
+        "RAG": 0.762432915921288,
+        "SQLT": 0.8516159809183066,
+        "V12": 0.8516159809183066
+      }
+    }
+  },
+  "verdicts": {
+    "Y1_reading_beats_rented": {
+      "detail": {
+        "32": [
+          0.8516159809183066,
+          0.762432915921288
+        ],
+        "128": [
+          0.8835524798154555,
+          0.7558477508650518
+        ]
+      },
+      "passed": true
+    },
+    "Y2_position_matters": {
+      "detail": {
+        "32": [
+          0.8516159809183066,
+          0.6465593321407275
+        ],
+        "128": [
+          0.8835524798154555,
+          0.6202998846597463
+        ]
+      },
+      "passed": true
+    },
+    "Y3_confound_action": {
+      "detail": {
+        "FLAT": 0.5909361955873583,
+        "RAG": 0.09564698867024449,
+        "SQLT": 0.0,
+        "V12": 0.0
+      },
+      "passed": false
+    },
+    "Y4_store_is_not_the_advantage": {
+      "detail": {
+        "first": [],
+        "mismatches": 0,
+        "streams": 3600
+      },
+      "passed": true
+    },
+    "Y5_storage": {
+      "detail": {
+        "32": {
+          "mean_rows_bytes": 63406.08,
+          "ratio": 0.3028100775193798,
+          "terrain_bytes": 19200
+        },
+        "128": {
+          "mean_rows_bytes": 226836.48,
+          "ratio": 0.08464247020585049,
+          "terrain_bytes": 19200
+        }
+      },
+      "passed": true
+    }
+  }
+}

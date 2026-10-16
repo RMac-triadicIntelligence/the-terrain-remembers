@@ -1,0 +1,50 @@
+{
+  "artifact": "terrain_vs_scalar_confound_falsifier",
+  "version": "1.2",
+  "date": "2026-10-15",
+  "author": "Rusty McMurray / Soulshine (Tulsa, OK); built by Claude at his direction",
+  "frozen_before_any_v1_2_code": true,
+  "preserves": "v1.1 as run (prereg e8f2b93c...69fc, receipt fc6b84da...4b50, reproduced bit-identically 2026-10-15 on numpy 2.5.3/scipy 1.18.1). world.py and v1_readers.py byte-identical to v1.",
+
+  "defect_addressed": "v1.1 reopen_check tests only regions OUTSIDE the hold footprint with a sign test at alpha .01; fewer than 7 outside regions can never pass (2^-6 > .01), so a footprint of >=10 of 16 regions is absorbing (ChatGPT review 2026-10-10, crafted probe). At lambda 128 early looks also fail persistence because the 42-day span still contains pre-onset days, and the re-hold footprint covers most of a well-fed terrain.",
+
+  "change": {
+    "only_the_reopening_rule_changes": "look(), states, need definition, encounter schedule, cost proxy and scoring are unchanged from v1.1.",
+    "hold_day": "when an item enters HELD at day h, record h. A re-hold after a reopened look records the new h.",
+    "new_evidence_requirement": "a HELD item is checked at a need only once at least 14 days (one BLOCK) of evidence have arrived after h. Before that, no check is made and none is counted.",
+    "check": "NEW EVIDENCE ONLY, WHOLE TERRAIN: window W = days h+1..d. Baseline = each region's own rate over the history used by the look that produced the hold (days before h-41). (a) spread: sign test over ALL eligible regions (>=5 messages in W and in baseline) that W excess over baseline is positive, p < 0.01; (b) persistence: pooled W excess over pooled baseline, one-sided z > 2.326. Both required.",
+    "footprint": "still computed and recorded at every hold, for reporting only. It no longer gates the check.",
+    "pressure_alone_never_reopens": "pooled excess (b) is never sufficient; positional spread over the whole terrain on new evidence (a) is required.",
+    "if_fires": "a full look the same day, exactly as v1.1."
+  },
+
+  "cost_accounting": "as v1.1: R+3 per full look; eligible regions per reopening check.",
+
+  "experiments": {
+    "MAIN": {"lambda": 32, "R": 16, "seeds": 300, "families": "all 6"},
+    "HIGH": {"lambda": 128, "R": 16, "seeds": 300, "families": "all 6"},
+    "LOW_DESCRIPTIVE": {"lambda": 8, "R": 16, "seeds": 300, "families": "all 6", "note": "reported, no predictions"},
+    "PROBE": "ChatGPT's absorbing-footprint probe (n=100 everywhere; k=10, days 57-62 k=90, day 63+ k=50; encounters every day), reproduced verbatim"
+  },
+
+  "predictions_exact_counts_out_of_300": {
+    "P0_lockout_probe": "v1.2 on the probe ends PROPOSED (v1.1 ends HELD with 0 reopens).",
+    "P1_genuine_main": "GENUINE proposals at lambda 32 >= 160 (v1.1).",
+    "P2_genuine_high": "GENUINE proposals at lambda 128 >= 240.",
+    "P3_positional_confounds": "COMMUTE <= 15 and DINNER <= 15, at lambda 32 and at lambda 128.",
+    "P4_difficult_month": "WINDOW <= 20 at lambda 32 and <= 54 at lambda 128 (no worse than v1.1).",
+    "P5_held_confounds_stay_held": "among COMMUTE and DINNER streams HELD at first look, share ever reopened <= 0.05, each family, at lambda 32 and 128.",
+    "P6_action": "macro action accuracy (GENUINE, COMMUTE, DINNER, WINDOW, NULL) >= 0.8478 at lambda 32 (v1.1) and >= 0.8738 at lambda 128 (v1 TERRAIN, which v1.1 lost to).",
+    "P7_null": "NULL <= 15 at lambda 32 and 128.",
+    "P8_information_limit": "COLOCATED vs GENUINE two-proportion |z| < 3 at lambda 32 and 128.",
+    "P9_cost": "MAIN mean full looks <= 0.1 x v1 TERRAIN looks, and mean region evaluations <= 0.25 x v1's (v1.1's P1/P1b, unchanged)."
+  },
+
+  "mutation_lane": {
+    "M1_pressure_only_reopen": "reopen on (b) alone. Must raise held-COMMUTE reopen share above 0.05 at lambda 32, i.e. be caught by P5.",
+    "M2_old_evidence": "use the full 42-day span instead of post-hold evidence in the check. Reported: reopen counts and GENUINE/WINDOW proposals vs v1.2.",
+    "M3_polling": "look every day under pressure: reads per stream >= 3x v1.2."
+  },
+
+  "reporting_rule": "Every prediction reported PASS or FAIL as frozen, with exact counts. No change after the first full run; any change is v1.3 with this preserved."
+}

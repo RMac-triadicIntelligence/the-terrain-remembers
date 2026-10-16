@@ -1,0 +1,34 @@
+{
+  "artifact": "terrain_vs_scalar_confound_falsifier",
+  "version": "1.7",
+  "date": "2026-10-15",
+  "author": "Rusty McMurray / Soulshine; built by Claude at his direction",
+  "frozen_before_any_v1_7_code": true,
+  "preserves": "v1.1-v1.6 (v1.6 receipt f7346db0...a9be). world.py and v1_readers.py byte-identical to v1.",
+
+  "direction": "Rusty, 2026-10-15: try the scout / home-keeping model on the choice decision. Some scout; home makers confirm; a housekeeper. From the village: one in three scouts; nothing goes on the family map without a witness.",
+
+  "family": "OPERATIONALIZATION BY CLAUDE, flagged. Three members read the same owner terrain (the family ground) at the same needs (need definition unchanged).",
+  "roles": {
+    "SCOUT": "reads the FRONTIER only: the newest 14 days (d-13..d) across the whole terrain, against each region's history before the 42-day span (days < d-41). Discovery = regional sign test p < 0.01 over eligible regions AND pooled frontier z > 2.326. Reports its up-regions. A scout never vouches for its own find.",
+    "HOMEMAKER": "confirms a scout's report on ESTABLISHED ground the scout did not read: days d-41..d-14, same baseline. Confirmed iff, among the scout's up-regions that are eligible, the established-ground excess is positive in a share passing the sign test p < 0.01, AND pooled established-ground z > 2.326.",
+    "HOUSEKEEPER": "keeps the family record of scout reports: confirmed find +1, unconfirmed find -1; needs with no discovery deposit nothing. Record never deleted; only entries within the present 42-day span weigh (v1.5 rule). The family PROPOSES when the present tally > 0."
+  },
+  "ablation_SCOUT_ALONE": "every discovery deposits +1 with no homemaker confirmation (the scout vouches for itself).",
+
+  "experiments": "lambda 32, 128, 8 x 6 families x 300 seeds; probe; BURST b = 5, 8; v1.6 and v1.2 alongside on identical worlds.",
+
+  "predictions_exact_counts_out_of_300": {
+    "X1_probe": "PROPOSED.",
+    "X2_genuine": "GENUINE >= 158 at lambda 32 (v1.6) and >= 240 at lambda 128.",
+    "X3_positional_confounds": "COMMUTE <= 5 and DINNER <= 5 at lambda 32 and 128.",
+    "X4_difficult_month": "WINDOW <= 15 at lambda 32 and <= 30 at lambda 128.",
+    "X5_null": "NULL <= 15 at lambda 32 and 128.",
+    "X6_action": "macro accuracy >= 0.8389 at lambda 32 (v1.6) and >= 0.8886 at lambda 128.",
+    "X7_information_limit": "COLOCATED vs GENUINE |z| < 3 at lambda 32 and 128.",
+    "X8_cost": "MAIN mean region evaluations <= v1.6's 287.6 (scouting reads one block; confirmation only on reports). Charged: R per scout read, R per confirmation.",
+    "X9_burst": "BURST b = 8 false proposals <= 5 of 200.",
+    "X10_witness_matters": "WINDOW proposals with the homemaker < SCOUT_ALONE's at lambda 32 and at lambda 128."
+  },
+  "reporting_rule": "PASS/FAIL as frozen with exact counts; discoveries and confirmations reported per family. No change after the first full run."
+}

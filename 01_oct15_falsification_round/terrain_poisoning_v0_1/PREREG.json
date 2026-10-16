@@ -1,0 +1,35 @@
+{
+  "artifact": "terrain_poisoning_battery",
+  "version": "0.1",
+  "date": "2026-10-15",
+  "author": "Rusty McMurray / Soulshine; built by Claude at his direction",
+  "frozen_before_any_code": true,
+  "readers_under_test": "SCALAR and v1 TERRAIN (v1_readers.py, unchanged) and the v1.2 need reader (need_reader_v1_2.py, sha256 as in terrain v1.2 MANIFEST). World and readers unchanged.",
+
+  "threat": "INJECTION adversary. It can add forged replies to the organism's ordinary input ('food') from day 50 to day 149. It cannot read or rewrite stored history and cannot touch the authority gate. A forged reply is indistinguishable per event from a real one: same channel, same shared size distribution. Root-level REWRITING of terrain is out of scope here; it falls under the authority layer (basin sealed but not attested, R9).",
+
+  "goals": {
+    "INDUCE": "cause a false PROPOSAL on an owner with no change (NULL family, 200 seeds, lambda 32).",
+    "SUPPRESS": "prevent a genuine preference from being proposed (GENUINE family, 200 seeds, lambda 32)."
+  },
+
+  "strategies": {
+    "CONCENTRATED": "b forged truncations per day, all at hour 12, every day.",
+    "BURST": "b forged truncations per day spread over hours in proportion to the owner's activity profile, days 70-90 only (21 days).",
+    "SPREAD": "b forged truncations per day spread over hours in proportion to the owner's activity profile, every day: the shape of a genuine preference.",
+    "DILUTE": "m forged NON-truncated replies per day spread in proportion to the activity profile, every day (SUPPRESS only)."
+  },
+  "budgets": {"b_truncations_per_day": [0.5, 1, 2, 3, 5, 8], "m_replies_per_day": [8, 16, 32, 64],
+              "reference": "a genuine preference at lambda 32 adds DELTA*lambda = 2.56 truncations per day"},
+  "forged_counts": "Poisson with the stated daily mean per (day, hour) cell; adversary rng keyed on (strategy, budget, seed), independent of the world rng.",
+
+  "predictions": {
+    "Q1_concentrated": "SCALAR false-proposal rate >= 0.50 at b = 3. v1.2 <= 0.05 at every b up to 8.",
+    "Q2_burst": "SCALAR >= 0.50 at b = 3. v1.2 <= 0.10 at every b up to 8.",
+    "Q3_spread_information_limit": "v1.2 >= 0.50 at b = 3. A poison shaped exactly like a genuine preference is not resisted by any reader; the terrain is not a defense against a knowledgeable poisoner.",
+    "Q4_cost_ratio": "smallest b with false-proposal rate >= 0.50 under CONCENTRATED: SCALAR <= 3, v1.2 not reached at b = 8.",
+    "Q5_dilution": "v1.2 GENUINE proposals at m = 32 <= 0.5 x its unattacked GENUINE proposals on the same 200 seeds.",
+    "Q0_control": "at b = 0 every reader's NULL false-proposal rate equals its unattacked rate on the same seeds exactly."
+  },
+  "reporting_rule": "PASS/FAIL as frozen with exact counts. No change after the first full run."
+}

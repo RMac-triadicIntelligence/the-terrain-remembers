@@ -1,0 +1,913 @@
+{
+  "burst_descriptive": {
+    "5": {
+      "fam": 79,
+      "lapse": 79,
+      "scout": 193,
+      "v12": 12,
+      "v16": 1,
+      "v17": 12
+    },
+    "8": {
+      "fam": 153,
+      "lapse": 153,
+      "scout": 200,
+      "v12": 28,
+      "v16": 1,
+      "v17": 31
+    }
+  },
+  "prereg_sha256": "155419c676ae402ffe9717e8c5c537236ad40656bf143133646baabcaa4fb03d",
+  "summary": {
+    "128": {
+      "COLOCATED": {
+        "fam": {
+          "acc": 0.2820069204152249,
+          "confirmed": 300,
+          "discoveries": 582,
+          "evals": 52.74666666666667,
+          "proposals": 300
+        },
+        "lapse": {
+          "acc": 0.2895040369088812,
+          "confirmed": 309,
+          "discoveries": 592,
+          "evals": 54.45333333333333,
+          "proposals": 299
+        },
+        "scout": {
+          "acc": 0.1314878892733564,
+          "confirmed": 0,
+          "discoveries": 300,
+          "evals": 19.52,
+          "proposals": 300
+        },
+        "v12": {
+          "acc": 0.3846597462514418,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 82.53333333333333,
+          "proposals": 300
+        },
+        "v16": {
+          "acc": 0.4897347174163783,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 238.29666666666665,
+          "proposals": 300
+        },
+        "v17": {
+          "acc": 0.385121107266436,
+          "confirmed": 1344,
+          "discoveries": 2452,
+          "evals": 278.3466666666667,
+          "proposals": 300
+        },
+        "v1_evals": 1212.32
+      },
+      "COMMUTE": {
+        "fam": {
+          "acc": 0.9978085351787774,
+          "confirmed": 1,
+          "discoveries": 36,
+          "evals": 403.52,
+          "proposals": 1
+        },
+        "lapse": {
+          "acc": 0.9978085351787774,
+          "confirmed": 1,
+          "discoveries": 36,
+          "evals": 403.52,
+          "proposals": 1
+        },
+        "scout": {
+          "acc": 0.9489042675893887,
+          "confirmed": 0,
+          "discoveries": 35,
+          "evals": 387.62666666666667,
+          "proposals": 35
+        },
+        "v12": {
+          "acc": 0.9889273356401385,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 345.3566666666667,
+          "proposals": 4
+        },
+        "v16": {
+          "acc": 0.9923875432525952,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 491.18,
+          "proposals": 3
+        },
+        "v17": {
+          "acc": 0.9906574394463667,
+          "confirmed": 6,
+          "discoveries": 64,
+          "evals": 408.74666666666667,
+          "proposals": 4
+        },
+        "v1_evals": 4085.92
+      },
+      "DINNER": {
+        "fam": {
+          "acc": 0.9973471741637832,
+          "confirmed": 1,
+          "discoveries": 21,
+          "evals": 410.4,
+          "proposals": 1
+        },
+        "lapse": {
+          "acc": 0.9973471741637832,
+          "confirmed": 1,
+          "discoveries": 21,
+          "evals": 410.4,
+          "proposals": 1
+        },
+        "scout": {
+          "acc": 0.9594002306805075,
+          "confirmed": 0,
+          "discoveries": 21,
+          "evals": 397.0133333333333,
+          "proposals": 21
+        },
+        "v12": {
+          "acc": 0.9948096885813149,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 353.24,
+          "proposals": 2
+        },
+        "v16": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 498.6666666666667,
+          "proposals": 0
+        },
+        "v17": {
+          "acc": 1.0,
+          "confirmed": 1,
+          "discoveries": 36,
+          "evals": 416.64,
+          "proposals": 0
+        },
+        "v1_evals": 4161.12
+      },
+      "GENUINE": {
+        "fam": {
+          "acc": 0.7098039215686275,
+          "confirmed": 299,
+          "discoveries": 589,
+          "evals": 55.946666666666665,
+          "proposals": 299
+        },
+        "lapse": {
+          "acc": 0.7,
+          "confirmed": 308,
+          "discoveries": 602,
+          "evals": 58.08,
+          "proposals": 297
+        },
+        "scout": {
+          "acc": 0.8655132641291811,
+          "confirmed": 0,
+          "discoveries": 300,
+          "evals": 21.173333333333332,
+          "proposals": 300
+        },
+        "v12": {
+          "acc": 0.6153402537485583,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 82.47,
+          "proposals": 299
+        },
+        "v16": {
+          "acc": 0.5125720876585929,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 237.78,
+          "proposals": 300
+        },
+        "v17": {
+          "acc": 0.5974625144175317,
+          "confirmed": 1347,
+          "discoveries": 2495,
+          "evals": 288.4266666666667,
+          "proposals": 298
+        },
+        "v1_evals": 1245.76
+      },
+      "NULL": {
+        "fam": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 0.6933333333333334,
+          "proposals": 0
+        },
+        "lapse": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 0.6933333333333334,
+          "proposals": 0
+        },
+        "scout": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 0.6933333333333334,
+          "proposals": 0
+        },
+        "v12": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 0.76,
+          "proposals": 0
+        },
+        "v16": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 0.8233333333333334,
+          "proposals": 0
+        },
+        "v17": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 0.6933333333333334,
+          "proposals": 0
+        },
+        "v1_evals": 2.56
+      },
+      "WINDOW": {
+        "fam": {
+          "acc": 0.3522491349480969,
+          "confirmed": 268,
+          "discoveries": 534,
+          "evals": 51.946666666666665,
+          "proposals": 268
+        },
+        "lapse": {
+          "acc": 0.3522491349480969,
+          "confirmed": 268,
+          "discoveries": 534,
+          "evals": 51.946666666666665,
+          "proposals": 268
+        },
+        "scout": {
+          "acc": 0.14382929642445214,
+          "confirmed": 0,
+          "discoveries": 297,
+          "evals": 21.813333333333333,
+          "proposals": 297
+        },
+        "v12": {
+          "acc": 0.8186851211072664,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 55.2,
+          "proposals": 78
+        },
+        "v16": {
+          "acc": 0.9401384083044982,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 155.86333333333334,
+          "proposals": 25
+        },
+        "v17": {
+          "acc": 0.7414071510957324,
+          "confirmed": 675,
+          "discoveries": 1746,
+          "evals": 209.76,
+          "proposals": 109
+        },
+        "v1_evals": 1155.2
+      }
+    },
+    "32": {
+      "COLOCATED": {
+        "fam": {
+          "acc": 0.7098389982110912,
+          "confirmed": 156,
+          "discoveries": 592,
+          "evals": 176.16,
+          "proposals": 156
+        },
+        "lapse": {
+          "acc": 0.7602862254025045,
+          "confirmed": 172,
+          "discoveries": 624,
+          "evals": 190.18666666666667,
+          "proposals": 136
+        },
+        "scout": {
+          "acc": 0.2547406082289803,
+          "confirmed": 0,
+          "discoveries": 287,
+          "evals": 59.946666666666665,
+          "proposals": 287
+        },
+        "v12": {
+          "acc": 0.6457960644007156,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 150.57,
+          "proposals": 180
+        },
+        "v16": {
+          "acc": 0.7573047107930829,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 360.70666666666665,
+          "proposals": 149
+        },
+        "v17": {
+          "acc": 0.7798449612403101,
+          "confirmed": 520,
+          "discoveries": 1642,
+          "evals": 363.68,
+          "proposals": 118
+        },
+        "v1_evals": 2614.08
+      },
+      "COMMUTE": {
+        "fam": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 40,
+          "evals": 357.49333333333334,
+          "proposals": 0
+        },
+        "lapse": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 40,
+          "evals": 357.49333333333334,
+          "proposals": 0
+        },
+        "scout": {
+          "acc": 0.9314251639833036,
+          "confirmed": 0,
+          "discoveries": 38,
+          "evals": 337.06666666666666,
+          "proposals": 38
+        },
+        "v12": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 290.98,
+          "proposals": 0
+        },
+        "v16": {
+          "acc": 0.9976147883124628,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 434.22,
+          "proposals": 1
+        },
+        "v17": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 63,
+          "evals": 366.93333333333334,
+          "proposals": 0
+        },
+        "v1_evals": 3550.4
+      },
+      "DINNER": {
+        "fam": {
+          "acc": 0.9991651759093619,
+          "confirmed": 1,
+          "discoveries": 50,
+          "evals": 353.06666666666666,
+          "proposals": 1
+        },
+        "lapse": {
+          "acc": 0.9991651759093619,
+          "confirmed": 1,
+          "discoveries": 50,
+          "evals": 353.06666666666666,
+          "proposals": 1
+        },
+        "scout": {
+          "acc": 0.9267740011926059,
+          "confirmed": 0,
+          "discoveries": 47,
+          "evals": 331.7866666666667,
+          "proposals": 47
+        },
+        "v12": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 289.4266666666667,
+          "proposals": 0
+        },
+        "v16": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 431.8066666666667,
+          "proposals": 0
+        },
+        "v17": {
+          "acc": 0.9986881335718545,
+          "confirmed": 2,
+          "discoveries": 66,
+          "evals": 362.56,
+          "proposals": 1
+        },
+        "v1_evals": 3518.24
+      },
+      "GENUINE": {
+        "fam": {
+          "acc": 0.35038759689922483,
+          "confirmed": 185,
+          "discoveries": 585,
+          "evals": 162.93333333333334,
+          "proposals": 185
+        },
+        "lapse": {
+          "acc": 0.30089445438282647,
+          "confirmed": 194,
+          "discoveries": 604,
+          "evals": 176.64,
+          "proposals": 163
+        },
+        "scout": {
+          "acc": 0.7469290399522958,
+          "confirmed": 0,
+          "discoveries": 292,
+          "evals": 60.373333333333335,
+          "proposals": 292
+        },
+        "v12": {
+          "acc": 0.32450805008944544,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 156.81,
+          "proposals": 173
+        },
+        "v16": {
+          "acc": 0.22814549791293978,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 369.66,
+          "proposals": 158
+        },
+        "v17": {
+          "acc": 0.19022063208109719,
+          "confirmed": 523,
+          "discoveries": 1698,
+          "evals": 377.06666666666666,
+          "proposals": 109
+        },
+        "v1_evals": 2573.76
+      },
+      "NULL": {
+        "fam": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 3,
+          "evals": 2.026666666666667,
+          "proposals": 0
+        },
+        "lapse": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 3,
+          "evals": 2.026666666666667,
+          "proposals": 0
+        },
+        "scout": {
+          "acc": 0.9932021466905188,
+          "confirmed": 0,
+          "discoveries": 3,
+          "evals": 2.026666666666667,
+          "proposals": 3
+        },
+        "v12": {
+          "acc": 0.9976147883124628,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 1.53,
+          "proposals": 1
+        },
+        "v16": {
+          "acc": 0.9976147883124628,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 2.3433333333333333,
+          "proposals": 1
+        },
+        "v17": {
+          "acc": 0.9976147883124628,
+          "confirmed": 1,
+          "discoveries": 3,
+          "evals": 2.1866666666666665,
+          "proposals": 1
+        },
+        "v1_evals": 11.52
+      },
+      "WINDOW": {
+        "fam": {
+          "acc": 0.8598688133571855,
+          "confirmed": 58,
+          "discoveries": 294,
+          "evals": 64.90666666666667,
+          "proposals": 58
+        },
+        "lapse": {
+          "acc": 0.8598688133571855,
+          "confirmed": 58,
+          "discoveries": 294,
+          "evals": 64.90666666666667,
+          "proposals": 58
+        },
+        "scout": {
+          "acc": 0.3549194991055456,
+          "confirmed": 0,
+          "discoveries": 233,
+          "evals": 42.72,
+          "proposals": 233
+        },
+        "v12": {
+          "acc": 0.9359570661896244,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 47.89333333333333,
+          "proposals": 28
+        },
+        "v16": {
+          "acc": 0.9710196779964222,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 127.04666666666667,
+          "proposals": 12
+        },
+        "v17": {
+          "acc": 0.9239117471675611,
+          "confirmed": 137,
+          "discoveries": 775,
+          "evals": 144.32,
+          "proposals": 29
+        },
+        "v1_evals": 976.32
+      }
+    },
+    "8": {
+      "COLOCATED": {
+        "fam": {
+          "acc": 0.9842778364425672,
+          "confirmed": 7,
+          "discoveries": 103,
+          "evals": 171.78666666666666,
+          "proposals": 7
+        },
+        "lapse": {
+          "acc": 0.9842778364425672,
+          "confirmed": 7,
+          "discoveries": 103,
+          "evals": 171.78666666666666,
+          "proposals": 7
+        },
+        "scout": {
+          "acc": 0.8180218233016543,
+          "confirmed": 0,
+          "discoveries": 89,
+          "evals": 135.84,
+          "proposals": 89
+        },
+        "v12": {
+          "acc": 0.9687903320427079,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 101.54666666666667,
+          "proposals": 16
+        },
+        "v16": {
+          "acc": 0.9740701630881146,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 217.85333333333332,
+          "proposals": 12
+        },
+        "v17": {
+          "acc": 0.9961281239000352,
+          "confirmed": 5,
+          "discoveries": 185,
+          "evals": 197.6,
+          "proposals": 2
+        },
+        "v1_evals": 1612.48
+      },
+      "COMMUTE": {
+        "fam": {
+          "acc": 0.9967147717939693,
+          "confirmed": 2,
+          "discoveries": 11,
+          "evals": 182.45333333333335,
+          "proposals": 2
+        },
+        "lapse": {
+          "acc": 0.9967147717939693,
+          "confirmed": 2,
+          "discoveries": 11,
+          "evals": 182.45333333333335,
+          "proposals": 2
+        },
+        "scout": {
+          "acc": 0.9824005631819782,
+          "confirmed": 0,
+          "discoveries": 11,
+          "evals": 179.94666666666666,
+          "proposals": 11
+        },
+        "v12": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 110.90666666666667,
+          "proposals": 0
+        },
+        "v16": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 220.32333333333332,
+          "proposals": 0
+        },
+        "v17": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 18,
+          "evals": 185.86666666666667,
+          "proposals": 0
+        },
+        "v1_evals": 1532.16
+      },
+      "DINNER": {
+        "fam": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 18,
+          "evals": 188.48,
+          "proposals": 0
+        },
+        "lapse": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 18,
+          "evals": 188.48,
+          "proposals": 0
+        },
+        "scout": {
+          "acc": 0.9713715827760179,
+          "confirmed": 0,
+          "discoveries": 17,
+          "evals": 183.2,
+          "proposals": 17
+        },
+        "v12": {
+          "acc": 0.9933122140091517,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 113.54666666666667,
+          "proposals": 2
+        },
+        "v16": {
+          "acc": 0.9933122140091517,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 224.27666666666667,
+          "proposals": 2
+        },
+        "v17": {
+          "acc": 0.9985920450545582,
+          "confirmed": 1,
+          "discoveries": 25,
+          "evals": 191.68,
+          "proposals": 1
+        },
+        "v1_evals": 1598.4
+      },
+      "GENUINE": {
+        "fam": {
+          "acc": 0.014314208611991083,
+          "confirmed": 8,
+          "discoveries": 117,
+          "evals": 181.54666666666665,
+          "proposals": 8
+        },
+        "lapse": {
+          "acc": 0.014314208611991083,
+          "confirmed": 8,
+          "discoveries": 117,
+          "evals": 181.54666666666665,
+          "proposals": 8
+        },
+        "scout": {
+          "acc": 0.1979349994133521,
+          "confirmed": 0,
+          "discoveries": 100,
+          "evals": 146.56,
+          "proposals": 100
+        },
+        "v12": {
+          "acc": 0.025460518596738237,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 107.93666666666667,
+          "proposals": 16
+        },
+        "v16": {
+          "acc": 0.008799718409010912,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 238.70333333333335,
+          "proposals": 6
+        },
+        "v17": {
+          "acc": 0.015604833978646017,
+          "confirmed": 15,
+          "discoveries": 175,
+          "evals": 205.12,
+          "proposals": 8
+        },
+        "v1_evals": 1741.12
+      },
+      "NULL": {
+        "fam": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 2,
+          "evals": 4.64,
+          "proposals": 0
+        },
+        "lapse": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 2,
+          "evals": 4.64,
+          "proposals": 0
+        },
+        "scout": {
+          "acc": 0.9980053971606242,
+          "confirmed": 0,
+          "discoveries": 2,
+          "evals": 4.64,
+          "proposals": 2
+        },
+        "v12": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 2.8666666666666667,
+          "proposals": 0
+        },
+        "v16": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 5.51,
+          "proposals": 0
+        },
+        "v17": {
+          "acc": 1.0,
+          "confirmed": 0,
+          "discoveries": 2,
+          "evals": 4.746666666666667,
+          "proposals": 0
+        },
+        "v1_evals": 30.24
+      },
+      "WINDOW": {
+        "fam": {
+          "acc": 0.9975360788454769,
+          "confirmed": 1,
+          "discoveries": 35,
+          "evals": 44.053333333333335,
+          "proposals": 1
+        },
+        "lapse": {
+          "acc": 0.9975360788454769,
+          "confirmed": 1,
+          "discoveries": 35,
+          "evals": 44.053333333333335,
+          "proposals": 1
+        },
+        "scout": {
+          "acc": 0.9170479877977238,
+          "confirmed": 0,
+          "discoveries": 32,
+          "evals": 40.32,
+          "proposals": 32
+        },
+        "v12": {
+          "acc": 0.9917869294849232,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 21.253333333333334,
+          "proposals": 4
+        },
+        "v16": {
+          "acc": 0.9930775548515781,
+          "confirmed": 0,
+          "discoveries": 0,
+          "evals": 57.19,
+          "proposals": 3
+        },
+        "v17": {
+          "acc": 0.9984747154757715,
+          "confirmed": 2,
+          "discoveries": 57,
+          "evals": 51.68,
+          "proposals": 1
+        },
+        "v1_evals": 370.08
+      }
+    }
+  },
+  "verdicts": {
+    "Z1_probe": {
+      "detail": {
+        "confirmed": 1,
+        "discoveries": 2,
+        "final_state": "PROPOSED",
+        "lapsed": 0,
+        "propose_day": 76
+      },
+      "passed": true
+    },
+    "Z2_genuine": {
+      "detail": {
+        "128": 299,
+        "32": 185
+      },
+      "passed": true
+    },
+    "Z3_positional_confounds": {
+      "detail": {
+        "COMMUTE@128": 1,
+        "COMMUTE@32": 0,
+        "DINNER@128": 1,
+        "DINNER@32": 1
+      },
+      "passed": true
+    },
+    "Z4_difficult_month": {
+      "detail": {
+        "128": 268,
+        "32": 58
+      },
+      "passed": false
+    },
+    "Z5_null": {
+      "detail": {
+        "128": 0,
+        "32": 0
+      },
+      "passed": true
+    },
+    "Z6_burst": {
+      "detail": {
+        "fam": 153,
+        "lapse": 153,
+        "scout": 200,
+        "v12": 28,
+        "v16": 1,
+        "v17": 31
+      },
+      "passed": false
+    },
+    "Z7_action": {
+      "detail": {
+        "128": 0.811441753171857,
+        "32": 0.8418843172331545
+      },
+      "passed": false
+    },
+    "Z8_information_limit": {
+      "detail": {
+        "32": -2.390267747958018,
+        "128": 1.0008343764488608
+      },
+      "passed": true
+    },
+    "Z9_no_penalty": {
+      "detail": {
+        "lapse_penalty": 163,
+        "v18": 185
+      },
+      "passed": true
+    }
+  }
+}

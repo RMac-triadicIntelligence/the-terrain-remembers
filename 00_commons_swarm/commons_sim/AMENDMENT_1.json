@@ -1,0 +1,8 @@
+{
+  "amends": "PREREG.json sha256 80dac0f0...6fd6e (left unedited; this file records the one change its calibration_rule allows)",
+  "date": "2026-10-13",
+  "reason": "Calibration run, FULL on seed 999 (never scored), went extinct: population 24 -> 0 by t=300; mean intake about 0.035 per agent-step against metabolism 0.05.",
+  "change": "metabolism 0.05 -> 0.025 per step. One change, as allowed. If FULL still goes extinct on seed 999, nothing else changes and that is reported.",
+  "also_fixed_not_a_constant": "outcome values are cast to plain floats for JSON (np.float64 printing). No behavior change.",
+  "safety_cap": "sim.py carries a population safety cap of 500 that PREREG.json does not mention. It is reported per run as cap_hit."
+}

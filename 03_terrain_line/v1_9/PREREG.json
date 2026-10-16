@@ -1,0 +1,39 @@
+{
+  "artifact": "terrain_two_layer_conductor",
+  "version": "1.9",
+  "date": "2026-10-15",
+  "author": "Rusty McMurray / Soulshine; built by Claude at his direction",
+  "frozen_before_any_v1_9_code": true,
+  "preserves": "v1.1-v1.8 (v1.8 receipt c32d3582...ce96). world.py and v1_readers.py byte-identical to v1.",
+
+  "direction": "Rusty, 2026-10-15: whether a local, momentary behaviour (brief during a commute, during a difficult month) is a correct action is not decided by the organism: it simply asks the conductor / creator. That is the conductor in action.",
+
+  "layers": {
+    "CHARACTER": "v1.6 organism, unchanged (need_reader_v1_6.py). Proposes character change for the owner's signature.",
+    "MAP": "OPERATIONALIZATION BY CLAUDE, flagged. Runs at the same needs, never changes character, never acts on its own: when it has a confirmed find it ASKS the conductor."
+  },
+  "map": {
+    "local_scout": "at each need, for every region not already pending and not already asked about: frontier (days d-13..d) excess over that region's own history before the 42-day span; discovery if eligible (>=5 messages in both) and one-sided z > 3.4155 (p < 0.01 Bonferroni-corrected over 16 regions). Each discovery becomes a pending find (region, day f).",
+    "witness": "a different member arrives at the first need >= 14 days after f and reads the SAME region on days f+1..d only, against that region's history before f-41. Confirmed iff z > 2.326 (single pre-specified region, no correction). Otherwise the find lapses: knowledge, no penalty.",
+    "ask": "all regions confirmed at the same need form ONE ask to the conductor, provided the character layer has not already proposed. The housekeeper records asked regions; a region already asked about is never asked again (knowledge, not repetition).",
+    "conductor": "the conductor's ANSWER is not simulated. This version measures only what the organism asks, where, when, and how often."
+  },
+
+  "ground_truth_for_scoring_asks_only": {
+    "commute_regions_R16": [2, 3],
+    "dinner_regions_R16": [6, 14],
+    "real_patterns": "GENUINE, COMMUTE, DINNER, WINDOW, COLOCATED carry a real change somewhere; NULL carries none."
+  },
+
+  "experiments": "lambda 32, 128, 8 x 6 families x 300 seeds.",
+
+  "predictions": {
+    "AA1_character_untouched": "character-layer propose_day identical to v1.6 on every one of the 5,400 streams.",
+    "AA2_no_alarm_on_noise": "share of NULL owners with any ask <= 0.05 at lambda 32 and at lambda 128.",
+    "AA3_local_patterns_seen": "share of COMMUTE owners asked >= 0.50 and of DINNER owners asked >= 0.50 at lambda 128.",
+    "AA4_asks_name_the_place": "at lambda 128, >= 80% of regions asked about on COMMUTE owners are commute regions {2,3}, and >= 80% on DINNER owners are dinner regions {6,14}.",
+    "AA5_burden": "mean ask events per owner <= 3 for every family at lambda 32 and at lambda 128.",
+    "AA6_real_change_seen": "share of GENUINE owners asked >= 0.50 and of WINDOW owners asked >= 0.50 at lambda 128."
+  },
+  "reporting_rule": "PASS/FAIL as frozen with exact numbers; lambda 32 and 8 reported descriptively where not predicted. No change after the first full run."
+}

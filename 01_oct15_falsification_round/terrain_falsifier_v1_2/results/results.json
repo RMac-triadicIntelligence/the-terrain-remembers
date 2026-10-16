@@ -1,0 +1,568 @@
+{
+  "mutation": {
+    "M1_caught_by_P5": true,
+    "M1_pressure_only": {
+      "COMMUTE": {
+        "held_first": 300,
+        "proposals": 4,
+        "reopened_share": 1.0
+      },
+      "GENUINE": {
+        "held_first": 299,
+        "proposals": 228,
+        "reopened_share": 1.0
+      },
+      "WINDOW": {
+        "held_first": 295,
+        "proposals": 51,
+        "reopened_share": 0.7593220338983051
+      }
+    },
+    "M2_old_evidence": {
+      "COMMUTE": {
+        "held_first": 300,
+        "proposals": 1,
+        "reopened_share": 0.05
+      },
+      "GENUINE": {
+        "held_first": 299,
+        "proposals": 202,
+        "reopened_share": 0.9297658862876255
+      },
+      "WINDOW": {
+        "held_first": 295,
+        "proposals": 43,
+        "reopened_share": 0.4440677966101695
+      }
+    },
+    "M3_at_least_3x": true,
+    "M3_need_reads": 18.7,
+    "M3_polling_reads": 59.68333333333333
+  },
+  "prereg_sha256": "3c1e46ee44fd7669834b68144a0557b34f2583d8168e386969796a78e3d8d48b",
+  "streams": 5400,
+  "summary": {
+    "128": {
+      "COLOCATED": {
+        "v1": {
+          "acc": 0.3719723183391003,
+          "evals": 1212.32,
+          "looks": 25.256666666666668,
+          "proposals": 299
+        },
+        "v11": {
+          "acc": 0.7009227220299885,
+          "evals": 140.72,
+          "held_first": 300,
+          "looks": 1.89,
+          "proposals": 154,
+          "reopened_share": 0.81
+        },
+        "v12": {
+          "acc": 0.3846597462514418,
+          "evals": 82.53333333333333,
+          "held_first": 300,
+          "looks": 2.64,
+          "proposals": 300,
+          "reopened_share": 1.0
+        }
+      },
+      "COMMUTE": {
+        "v1": {
+          "acc": 1.0,
+          "evals": 4085.92,
+          "looks": 85.12333333333333,
+          "proposals": 0
+        },
+        "v11": {
+          "acc": 0.980161476355248,
+          "evals": 287.82,
+          "held_first": 298,
+          "looks": 1.0333333333333334,
+          "proposals": 10,
+          "reopened_share": 0.03355704697986577
+        },
+        "v12": {
+          "acc": 0.9889273356401385,
+          "evals": 345.3566666666667,
+          "held_first": 298,
+          "looks": 1.0566666666666666,
+          "proposals": 4,
+          "reopened_share": 0.05704697986577181
+        }
+      },
+      "DINNER": {
+        "v1": {
+          "acc": 1.0,
+          "evals": 4161.12,
+          "looks": 86.69,
+          "proposals": 0
+        },
+        "v11": {
+          "acc": 0.9938869665513265,
+          "evals": 293.59,
+          "held_first": 300,
+          "looks": 1.0233333333333334,
+          "proposals": 5,
+          "reopened_share": 0.023333333333333334
+        },
+        "v12": {
+          "acc": 0.9948096885813149,
+          "evals": 353.24,
+          "held_first": 300,
+          "looks": 1.04,
+          "proposals": 2,
+          "reopened_share": 0.04
+        }
+      },
+      "GENUINE": {
+        "v1": {
+          "acc": 0.618800461361015,
+          "evals": 1245.76,
+          "looks": 25.953333333333333,
+          "proposals": 295
+        },
+        "v11": {
+          "acc": 0.30645905420991926,
+          "evals": 141.91666666666666,
+          "held_first": 296,
+          "looks": 1.8666666666666667,
+          "proposals": 153,
+          "reopened_share": 0.793918918918919
+        },
+        "v12": {
+          "acc": 0.6153402537485583,
+          "evals": 82.47,
+          "held_first": 296,
+          "looks": 2.6033333333333335,
+          "proposals": 299,
+          "reopened_share": 1.0
+        }
+      },
+      "NULL": {
+        "v1": {
+          "acc": 1.0,
+          "evals": 2.56,
+          "looks": 0.05333333333333334,
+          "proposals": 0
+        },
+        "v11": {
+          "acc": 1.0,
+          "evals": 0.7866666666666666,
+          "held_first": 12,
+          "looks": 0.04,
+          "proposals": 0,
+          "reopened_share": 0.0
+        },
+        "v12": {
+          "acc": 1.0,
+          "evals": 0.76,
+          "held_first": 12,
+          "looks": 0.04,
+          "proposals": 0,
+          "reopened_share": 0.0
+        }
+      },
+      "WINDOW": {
+        "v1": {
+          "acc": 0.7500576701268743,
+          "evals": 1155.2,
+          "looks": 24.066666666666666,
+          "proposals": 112
+        },
+        "v11": {
+          "acc": 0.8703575547866206,
+          "evals": 80.19666666666667,
+          "held_first": 296,
+          "looks": 1.46,
+          "proposals": 54,
+          "reopened_share": 0.42567567567567566
+        },
+        "v12": {
+          "acc": 0.8186851211072664,
+          "evals": 55.2,
+          "held_first": 296,
+          "looks": 1.8666666666666667,
+          "proposals": 78,
+          "reopened_share": 0.8783783783783784
+        }
+      }
+    },
+    "32": {
+      "COLOCATED": {
+        "v1": {
+          "acc": 0.7722122838401908,
+          "evals": 2614.08,
+          "looks": 54.46,
+          "proposals": 118
+        },
+        "v11": {
+          "acc": 0.702206320810972,
+          "evals": 167.41333333333333,
+          "held_first": 297,
+          "looks": 1.7933333333333332,
+          "proposals": 157,
+          "reopened_share": 0.6868686868686869
+        },
+        "v12": {
+          "acc": 0.6457960644007156,
+          "evals": 150.57,
+          "held_first": 297,
+          "looks": 2.3833333333333333,
+          "proposals": 180,
+          "reopened_share": 0.898989898989899
+        }
+      },
+      "COMMUTE": {
+        "v1": {
+          "acc": 1.0,
+          "evals": 3550.4,
+          "looks": 73.96666666666667,
+          "proposals": 0
+        },
+        "v11": {
+          "acc": 0.9923673225998807,
+          "evals": 257.38,
+          "held_first": 300,
+          "looks": 1.0166666666666666,
+          "proposals": 4,
+          "reopened_share": 0.016666666666666666
+        },
+        "v12": {
+          "acc": 1.0,
+          "evals": 290.98,
+          "held_first": 300,
+          "looks": 1.05,
+          "proposals": 0,
+          "reopened_share": 0.05
+        }
+      },
+      "DINNER": {
+        "v1": {
+          "acc": 1.0,
+          "evals": 3518.24,
+          "looks": 73.29666666666667,
+          "proposals": 0
+        },
+        "v11": {
+          "acc": 0.9980918306499702,
+          "evals": 253.66666666666666,
+          "held_first": 299,
+          "looks": 1.01,
+          "proposals": 2,
+          "reopened_share": 0.013377926421404682
+        },
+        "v12": {
+          "acc": 1.0,
+          "evals": 289.4266666666667,
+          "held_first": 299,
+          "looks": 1.05,
+          "proposals": 0,
+          "reopened_share": 0.05351170568561873
+        }
+      },
+      "GENUINE": {
+        "v1": {
+          "acc": 0.23041144901610017,
+          "evals": 2573.76,
+          "looks": 53.62,
+          "proposals": 120
+        },
+        "v11": {
+          "acc": 0.29636255217650564,
+          "evals": 170.29333333333332,
+          "held_first": 299,
+          "looks": 1.7933333333333332,
+          "proposals": 160,
+          "reopened_share": 0.6722408026755853
+        },
+        "v12": {
+          "acc": 0.32450805008944544,
+          "evals": 156.81,
+          "held_first": 299,
+          "looks": 2.3833333333333333,
+          "proposals": 173,
+          "reopened_share": 0.903010033444816
+        }
+      },
+      "NULL": {
+        "v1": {
+          "acc": 1.0,
+          "evals": 11.52,
+          "looks": 0.24,
+          "proposals": 0
+        },
+        "v11": {
+          "acc": 0.9976147883124628,
+          "evals": 1.9166666666666667,
+          "held_first": 21,
+          "looks": 0.07333333333333333,
+          "proposals": 1,
+          "reopened_share": 0.0
+        },
+        "v12": {
+          "acc": 0.9976147883124628,
+          "evals": 1.53,
+          "held_first": 21,
+          "looks": 0.07333333333333333,
+          "proposals": 1,
+          "reopened_share": 0.0
+        }
+      },
+      "WINDOW": {
+        "v1": {
+          "acc": 0.9573047107930829,
+          "evals": 976.32,
+          "looks": 20.34,
+          "proposals": 20
+        },
+        "v11": {
+          "acc": 0.9543231961836613,
+          "evals": 76.49,
+          "held_first": 295,
+          "looks": 1.22,
+          "proposals": 20,
+          "reopened_share": 0.2
+        },
+        "v12": {
+          "acc": 0.9359570661896244,
+          "evals": 47.89333333333333,
+          "held_first": 295,
+          "looks": 1.38,
+          "proposals": 28,
+          "reopened_share": 0.3898305084745763
+        }
+      }
+    },
+    "8": {
+      "COLOCATED": {
+        "v1": {
+          "acc": 1.0,
+          "evals": 1612.48,
+          "looks": 33.593333333333334,
+          "proposals": 0
+        },
+        "v11": {
+          "acc": 0.9642144784700223,
+          "evals": 108.05333333333333,
+          "held_first": 270,
+          "looks": 1.1166666666666667,
+          "proposals": 17,
+          "reopened_share": 0.1962962962962963
+        },
+        "v12": {
+          "acc": 0.9687903320427079,
+          "evals": 101.54666666666667,
+          "held_first": 270,
+          "looks": 1.2866666666666666,
+          "proposals": 16,
+          "reopened_share": 0.35555555555555557
+        }
+      },
+      "COMMUTE": {
+        "v1": {
+          "acc": 1.0,
+          "evals": 1532.16,
+          "looks": 31.92,
+          "proposals": 0
+        },
+        "v11": {
+          "acc": 0.9978880675818373,
+          "evals": 111.42666666666666,
+          "held_first": 280,
+          "looks": 0.9466666666666667,
+          "proposals": 1,
+          "reopened_share": 0.014285714285714285
+        },
+        "v12": {
+          "acc": 1.0,
+          "evals": 110.90666666666667,
+          "held_first": 280,
+          "looks": 0.9666666666666667,
+          "proposals": 0,
+          "reopened_share": 0.03214285714285714
+        }
+      },
+      "DINNER": {
+        "v1": {
+          "acc": 1.0,
+          "evals": 1598.4,
+          "looks": 33.3,
+          "proposals": 0
+        },
+        "v11": {
+          "acc": 0.9933122140091517,
+          "evals": 116.36333333333333,
+          "held_first": 274,
+          "looks": 0.9266666666666666,
+          "proposals": 2,
+          "reopened_share": 0.0072992700729927005
+        },
+        "v12": {
+          "acc": 0.9933122140091517,
+          "evals": 113.54666666666667,
+          "held_first": 274,
+          "looks": 0.9533333333333334,
+          "proposals": 2,
+          "reopened_share": 0.0364963503649635
+        }
+      },
+      "GENUINE": {
+        "v1": {
+          "acc": 0.0,
+          "evals": 1741.12,
+          "looks": 36.27333333333333,
+          "proposals": 0
+        },
+        "v11": {
+          "acc": 0.020767335445265753,
+          "evals": 114.64,
+          "held_first": 280,
+          "looks": 1.1066666666666667,
+          "proposals": 13,
+          "reopened_share": 0.16071428571428573
+        },
+        "v12": {
+          "acc": 0.025460518596738237,
+          "evals": 107.93666666666667,
+          "held_first": 280,
+          "looks": 1.4033333333333333,
+          "proposals": 16,
+          "reopened_share": 0.43214285714285716
+        }
+      },
+      "NULL": {
+        "v1": {
+          "acc": 1.0,
+          "evals": 30.24,
+          "looks": 0.63,
+          "proposals": 0
+        },
+        "v11": {
+          "acc": 1.0,
+          "evals": 3.256666666666667,
+          "held_first": 23,
+          "looks": 0.07666666666666666,
+          "proposals": 0,
+          "reopened_share": 0.0
+        },
+        "v12": {
+          "acc": 1.0,
+          "evals": 2.8666666666666667,
+          "held_first": 23,
+          "looks": 0.08,
+          "proposals": 0,
+          "reopened_share": 0.043478260869565216
+        }
+      },
+      "WINDOW": {
+        "v1": {
+          "acc": 1.0,
+          "evals": 370.08,
+          "looks": 7.71,
+          "proposals": 0
+        },
+        "v11": {
+          "acc": 0.9917869294849232,
+          "evals": 31.406666666666666,
+          "held_first": 190,
+          "looks": 0.6766666666666666,
+          "proposals": 4,
+          "reopened_share": 0.04736842105263158
+        },
+        "v12": {
+          "acc": 0.9917869294849232,
+          "evals": 21.253333333333334,
+          "held_first": 190,
+          "looks": 0.67,
+          "proposals": 4,
+          "reopened_share": 0.05263157894736842
+        }
+      }
+    }
+  },
+  "verdicts": {
+    "P0_lockout_probe": {
+      "detail": {
+        "v11": {
+          "checks": 87,
+          "final_state": "HELD",
+          "looks": 1,
+          "propose_day": null,
+          "reopens": 0
+        },
+        "v12": {
+          "checks": 2,
+          "final_state": "PROPOSED",
+          "looks": 3,
+          "propose_day": 90,
+          "reopens": 2
+        }
+      },
+      "passed": true
+    },
+    "P1_genuine_main": {
+      "detail": 173,
+      "passed": true
+    },
+    "P2_genuine_high": {
+      "detail": 299,
+      "passed": true
+    },
+    "P3_positional_confounds": {
+      "detail": {
+        "COMMUTE@128": 4,
+        "COMMUTE@32": 0,
+        "DINNER@128": 2,
+        "DINNER@32": 0
+      },
+      "passed": true
+    },
+    "P4_difficult_month": {
+      "detail": {
+        "128": 78,
+        "32": 28
+      },
+      "passed": false
+    },
+    "P5_held_confounds_stay_held": {
+      "detail": {
+        "COMMUTE@128": 0.05704697986577181,
+        "COMMUTE@32": 0.05,
+        "DINNER@128": 0.04,
+        "DINNER@32": 0.05351170568561873
+      },
+      "passed": false
+    },
+    "P6_action": {
+      "detail": {
+        "128": 0.8835524798154555,
+        "32": 0.8516159809183066
+      },
+      "passed": true
+    },
+    "P7_null": {
+      "detail": {
+        "128": 0,
+        "32": 1
+      },
+      "passed": true
+    },
+    "P8_information_limit": {
+      "detail": {
+        "32": 0.5806812939142282,
+        "128": 1.0008343764488505
+      },
+      "passed": true
+    },
+    "P9_cost": {
+      "detail": {
+        "evals": 156.20166666666668,
+        "looks": 1.3866666666666667,
+        "v1_evals": 2207.3866666666668,
+        "v1_looks": 45.98722222222222
+      },
+      "passed": true
+    }
+  }
+}

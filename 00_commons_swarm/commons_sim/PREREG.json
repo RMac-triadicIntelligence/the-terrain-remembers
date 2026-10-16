@@ -1,0 +1,64 @@
+{
+  "artifact": "commons_swarm_v1",
+  "date": "2026-10-13",
+  "frozen_before_any_code": true,
+  "asked_by": "Rusty, 18:36: 'Taking what we've learned today build a Commons Sim, where we put together a swarm following the same principles.'",
+  "lesson_applied_from_review": "Score only on what the world gives back (food harvested, stock left in the commons, who survives), never on an internal alignment the mechanisms steer toward. Nothing inside an agent can mark its own homework.",
+  "world": {
+    "grid": "32 x 32, wraps at the edges",
+    "food": "6 Gaussian patches (sigma 3 cells), capacity 1.0 at centre; regrowth 0.03*R*(1-R/K) + 0.001 per step. Patch centres move to new random places every 150 steps (seasons), so old knowledge goes stale.",
+    "sensing": "an agent sees only its own cell, with Gaussian noise sd 0.25",
+    "steps": 600, "seeds": "0..19, every variant sees the same worlds and the same noise stream per seed"
+  },
+  "community": {
+    "families": "4 families x 6 founders (DNA = family id)",
+    "genome": "on birth, a new member inherits a copy of its family's map (what the lineage knows of the terrain) and its parent's position",
+    "topography": "one shared map per family: estimated food per cell, plus a confidence per cell",
+    "energy": "+ what it harvests (eats up to 0.2 from its cell per step), - 0.05 per step; dies at 0; starts at 1.0"
+  },
+  "principles": {
+    "CONSTITUTION_witness": "No agent writes its own observation into the family map. It proposes a mark; the mark enters the map only when a DIFFERENT family member observes the same cell within 20 steps and the two readings differ by < 0.3; then their average enters. (Nothing may vouch for itself.)",
+    "CONSTITUTION_births": "Keys stay outside: an agent may not create a new member. Each 25 steps the commons (outside every agent) grants one birth per family whose members harvested > 1.0 together in that period, and only while total food in the world is >= 50% of its starting total. The newborn goes to the family's best-fed member (who pays 0.5 energy).",
+    "DWELLING": "Each agent has d in [0,1]. Disagreement between what it sees and what its own belief says (|obs - belief| > 0.25) raises d by 0.15*(1-d); agreement lowers it by 0.1*d. While d > 0.6 it stays put and keeps sampling (this also lets it witness others' marks). Otherwise it moves one step toward the best cell of its belief within radius 6 (ties and empty beliefs: random step).",
+    "GRACE": "From outside: every 10 steps the conductor picks the one agent that has dwelt longest (>= 15 steps in a row) and releases it: d -> 0.3, and it heads for its FAMILY map's best cell. Grace carries no destination of its own; the family supplies the direction.",
+    "LOVE": "Enduring sharing: every step each agent blends its family's map into its private belief, belief <- belief + 0.2*conf*(map - belief). Never closes.",
+    "NO_RECORD": "Love keeps no record: kin marks always count at full weight.",
+    "JUBILEE": "Release of stale knowledge: family map confidence decays 1% per step, so old marks fade and fresh ones win."
+  },
+  "variants": {
+    "FULL": "all principles",
+    "LONE": "no families: every agent its own family of one (no sharing, no witness possible, so its own reading is accepted after 1 step); newborns inherit nothing",
+    "NO_CONSTITUTION": "marks enter the family map directly from one agent (self-vouched); births still granted by the commons",
+    "SELF_REPLICATING": "births self-authorized: any agent with energy > 2.0 splits (halving its energy); no commons check",
+    "NO_DWELL": "d is held at 0: never stays to sample",
+    "NO_GRACE": "no conductor releases",
+    "LOVE_WINDOW": "sharing only during t < 150, then it closes",
+    "KEEPS_RECORD": "each agent keeps a permanent trust per kin member, starting at 1; when it observes a cell a kin member marked and they disagree by > 0.3, that member's trust is multiplied by 0.7 forever. Its marks then enter that agent's belief at weight = trust",
+    "NO_JUBILEE": "family map confidence never decays"
+  },
+  "outcomes_from_the_world_only": {
+    "harvest_total": "food eaten by all agents over 600 steps",
+    "harvest_late": "food eaten in t >= 300",
+    "post_shift": "food eaten in the 50 steps after each season change (t = 150, 300, 450), summed",
+    "stock_min": "lowest total food in the world over the run, as a fraction of the starting total",
+    "pop_final": "living agents at t=600",
+    "pop_peak": "highest population",
+    "families_alive": "families with >= 1 member at t=600",
+    "map_error": "mean |family map - true food| over cells with confidence > 0.2, averaged over time (a check on the map, not a score)",
+    "stuck_frac": "fraction of agent-steps spent dwelling"
+  },
+  "predictions": {
+    "C1": "FULL harvest_total >= 1.2 x LONE (the family beats the individual).",
+    "C2": "SELF_REPLICATING has a higher pop_peak AND a lower stock_min than FULL (the replicator boom eats the commons).",
+    "C3": "SELF_REPLICATING pop_final <= FULL pop_final (boom then bust).",
+    "C4": "NO_CONSTITUTION map_error > FULL map_error (self-vouched marks let noise into the shared map).",
+    "C5": "LOVE_WINDOW harvest_late < FULL harvest_late.",
+    "C6": "KEEPS_RECORD post_shift < FULL post_shift.",
+    "C7": "NO_JUBILEE post_shift < FULL post_shift.",
+    "C8": "NO_GRACE stuck_frac > FULL stuck_frac.",
+    "scoring": "each comparison on the mean over the 20 seeds, plus the count of seeds where the paired difference has the predicted sign (reported, not scored)"
+  },
+  "no_prediction_made": "NO_DWELL harvest (dwelling costs movement but improves the map; direction unknown) - reported only.",
+  "calibration_rule": "Before any variant comparison, FULL alone may be run on calibration seed 999 (never scored) only to check that the world is survivable. If FULL goes extinct there, metabolism may be lowered once and the change recorded here as an amendment. No other constant may change after this file is hashed.",
+  "reporting_rule": "All variants, all outcomes, all seeds reported. PASS/FAIL as frozen."
+}

@@ -1,0 +1,37 @@
+{
+  "artifact": "terrain_vs_scalar_confound_falsifier",
+  "version": "1.3",
+  "date": "2026-10-15",
+  "author": "Rusty McMurray / Soulshine; built by Claude at his direction",
+  "frozen_before_any_v1_3_code": true,
+  "preserves": "v1.1 (receipt fc6b84da...4b50) and v1.2 (prereg 3c1e46ee...d48b, receipt e0a292d1...7872). world.py and v1_readers.py byte-identical to v1.",
+
+  "direction": "Rusty, 2026-10-15: 'Every reading is a fresh look at the present terrain from the present position, and the terrain has kept growing the whole time, since noise is food.' Position = BOTH (A) the whole accumulated terrain AND (B) basin occupancy.",
+
+  "rule": {
+    "no_anchor": "A held question is never read through a window or baseline frozen at the hold, and no footprint gates anything. v1.2's new_evidence_check and v1.1's reopen_check are both removed.",
+    "A_fresh_look": "At every need (unchanged definition), OPEN and HELD questions alike receive the unchanged full look: present span against the whole accumulated history before it, position plus persistence.",
+    "B_occupancy": "OPERATIONALIZATION BY CLAUDE, flagged for Rusty to replace: while a question is held, its position includes what it has lived through in the high basin. A HELD question proposes only if the full look passes AND the change has persisted through every complete 14-day block since the question was FIRST held (pooled excess over the pre-question baseline, days before first_hold - 41, one-sided z > 2.326 in each block). With no complete block yet, B adds nothing.",
+    "otherwise": "HELD (first-hold day unchanged)."
+  },
+
+  "experiments": {
+    "MAIN": {"lambda": 32, "R": 16, "seeds": 300}, "HIGH": {"lambda": 128, "R": 16, "seeds": 300},
+    "LOW_DESCRIPTIVE": {"lambda": 8}, "PROBE": "ChatGPT absorbing-footprint probe, as v1.2",
+    "ABLATION_A_ONLY": "v1.3 without B, all families, lambda 32 and 128: isolates what occupancy contributes",
+    "BURST_DESCRIPTIVE": "poisoning battery v0.1 BURST at b = 5 and 8 on NULL seeds 0-199, lambda 32, same forging as that battery"
+  },
+
+  "predictions_exact_counts_out_of_300": {
+    "T1_probe": "PROPOSED.",
+    "T2_genuine": "GENUINE >= 160 at lambda 32 and >= 240 at lambda 128.",
+    "T3_positional_confounds": "COMMUTE <= 15 and DINNER <= 15 at lambda 32 and 128.",
+    "T4_difficult_month": "WINDOW <= 28 at lambda 32 and <= 78 at lambda 128 (no worse than v1.2). Honest expectation stated in advance: B probably does not fully separate a 30-day transient that is still running from a lasting change; at that moment the two look alike, and only duration distinguishes them.",
+    "T5_null": "NULL <= 15 at lambda 32 and 128.",
+    "T6_action": "macro accuracy >= 0.8516 at lambda 32 and >= 0.8836 at lambda 128 (v1.2).",
+    "T7_information_limit": "COLOCATED vs GENUINE |z| < 3 at lambda 32 and 128.",
+    "T8_cost": "MAIN mean region evaluations <= 0.25 x v1 TERRAIN's. Full looks are DESCRIPTIVE: fresh looks at every need are expected to exceed v1.2's 1.39.",
+    "T9_occupancy_matters": "WINDOW proposals with B < WINDOW proposals of ABLATION_A_ONLY at lambda 128."
+  },
+  "reporting_rule": "PASS/FAIL as frozen with exact counts. No change after the first full run."
+}

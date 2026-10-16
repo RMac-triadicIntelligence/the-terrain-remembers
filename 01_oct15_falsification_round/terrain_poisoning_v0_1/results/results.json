@@ -1,0 +1,206 @@
+{
+  "false_proposals_out_of_200": {
+    "BURST": {
+      "0": {
+        "SCALAR": 12,
+        "TERRAIN": 0,
+        "V12": 0
+      },
+      "0.5": {
+        "SCALAR": 28,
+        "TERRAIN": 0,
+        "V12": 0
+      },
+      "1": {
+        "SCALAR": 54,
+        "TERRAIN": 0,
+        "V12": 0
+      },
+      "2": {
+        "SCALAR": 150,
+        "TERRAIN": 1,
+        "V12": 0
+      },
+      "3": {
+        "SCALAR": 195,
+        "TERRAIN": 0,
+        "V12": 4
+      },
+      "5": {
+        "SCALAR": 200,
+        "TERRAIN": 3,
+        "V12": 12
+      },
+      "8": {
+        "SCALAR": 200,
+        "TERRAIN": 10,
+        "V12": 28
+      }
+    },
+    "CONCENTRATED": {
+      "0": {
+        "SCALAR": 12,
+        "TERRAIN": 0,
+        "V12": 0
+      },
+      "0.5": {
+        "SCALAR": 49,
+        "TERRAIN": 0,
+        "V12": 1
+      },
+      "1": {
+        "SCALAR": 110,
+        "TERRAIN": 0,
+        "V12": 0
+      },
+      "2": {
+        "SCALAR": 192,
+        "TERRAIN": 0,
+        "V12": 0
+      },
+      "3": {
+        "SCALAR": 200,
+        "TERRAIN": 0,
+        "V12": 2
+      },
+      "5": {
+        "SCALAR": 200,
+        "TERRAIN": 0,
+        "V12": 0
+      },
+      "8": {
+        "SCALAR": 200,
+        "TERRAIN": 0,
+        "V12": 1
+      }
+    },
+    "DILUTE_genuine_proposals": {
+      "0": {
+        "SCALAR": 200,
+        "TERRAIN": 79,
+        "V12": 112
+      },
+      "16": {
+        "SCALAR": 44,
+        "TERRAIN": 0,
+        "V12": 0
+      },
+      "32": {
+        "SCALAR": 1,
+        "TERRAIN": 0,
+        "V12": 0
+      },
+      "64": {
+        "SCALAR": 0,
+        "TERRAIN": 0,
+        "V12": 0
+      },
+      "8": {
+        "SCALAR": 166,
+        "TERRAIN": 4,
+        "V12": 13
+      }
+    },
+    "SPREAD": {
+      "0": {
+        "SCALAR": 12,
+        "TERRAIN": 0,
+        "V12": 0
+      },
+      "0.5": {
+        "SCALAR": 52,
+        "TERRAIN": 0,
+        "V12": 1
+      },
+      "1": {
+        "SCALAR": 118,
+        "TERRAIN": 1,
+        "V12": 2
+      },
+      "2": {
+        "SCALAR": 195,
+        "TERRAIN": 19,
+        "V12": 45
+      },
+      "3": {
+        "SCALAR": 200,
+        "TERRAIN": 86,
+        "V12": 115
+      },
+      "5": {
+        "SCALAR": 200,
+        "TERRAIN": 183,
+        "V12": 191
+      },
+      "8": {
+        "SCALAR": 200,
+        "TERRAIN": 200,
+        "V12": 200
+      }
+    }
+  },
+  "prereg_sha256": "76ae56c571741d8bf405cca22c30801f3a289d74530d9366d5311e8ff28bfb19",
+  "unattacked": {
+    "GENUINE": {
+      "SCALAR": 200,
+      "TERRAIN": 79,
+      "V12": 112
+    },
+    "NULL": {
+      "SCALAR": 12,
+      "TERRAIN": 0,
+      "V12": 0
+    }
+  },
+  "verdicts": {
+    "Q0_control": {
+      "detail": {
+        "GENUINE": {
+          "SCALAR": 200,
+          "TERRAIN": 79,
+          "V12": 112
+        },
+        "NULL": {
+          "SCALAR": 12,
+          "TERRAIN": 0,
+          "V12": 0
+        }
+      },
+      "passed": true
+    },
+    "Q1_concentrated": {
+      "detail": {
+        "SCALAR@3": 1.0,
+        "V12_max": 0.01
+      },
+      "passed": true
+    },
+    "Q2_burst": {
+      "detail": {
+        "SCALAR@3": 0.975,
+        "V12_max": 0.14
+      },
+      "passed": false
+    },
+    "Q3_spread_information_limit": {
+      "detail": {
+        "V12@3": 0.575
+      },
+      "passed": true
+    },
+    "Q4_cost_ratio": {
+      "detail": {
+        "SCALAR_first_b": 1,
+        "V12_first_b": null
+      },
+      "passed": true
+    },
+    "Q5_dilution": {
+      "detail": {
+        "V12_m32": 0,
+        "V12_unattacked": 112
+      },
+      "passed": true
+    }
+  }
+}

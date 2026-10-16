@@ -1,0 +1,31 @@
+{
+  "artifact": "terrain_vs_sql_reading",
+  "version": "0.1",
+  "date": "2026-10-15",
+  "author": "Rusty McMurray / Soulshine; built by Claude at his direction",
+  "frozen_before_any_code": true,
+  "question": "Is the terrain substantially better than SQL? Split into: (1) does position-dependent reading beat the standard rented-memory pattern on the same events; (2) does any advantage come from the STORE or from the READING DISCIPLINE.",
+
+  "world": "terrain v1.2 world unchanged: 6 families, 300 seeds, lambda 32 and 128, R = 16. Same encounter schedule for every reader.",
+
+  "readers": {
+    "V12": "terrain v1.2 organism (need_reader_v1_2.py, unchanged). Stores only per-(day, region) counts.",
+    "RAG": "rented-memory pattern. Stores every reply as a row (day, hour, truncated). At each scored encounter the context hour h_e is drawn from the owner's activity profile (rng keyed on lambda, seed, day; shared by all readers that use it). Retrieves rows with the same day type and |hour - h_e| <= 1. Acts brief iff the retrieved rows' truncation rate in the last 42 days exceeds their pre-span rate with pooled one-sided z > 2.326 in each of the three 14-day blocks (the same persistence rigor as a terrain look). Stateless: decides afresh at every encounter, no hold, no proposal. Not brief before day 62.",
+    "FLAT": "V12's organism with position removed: the look's positional sign test and the reopen spread test are treated as passed; persistence tests unchanged. A flat log with the same discipline.",
+    "SQLT": "V12 reimplemented so that EVERY data access is an SQL query against a SQLite rows table (day, hour, region, truncated): per-region and per-day aggregates via GROUP BY over day ranges. The decision arithmetic is V12's."
+  },
+
+  "scoring": "as terrain v1.1/v1.2: every encounter on days 50..149; brief is correct only for GENUINE; macro accuracy over GENUINE, COMMUTE, DINNER, WINDOW, NULL; COLOCATED reported only. For V12, FLAT and SQLT, action = brief iff PROPOSED on or before the day. For RAG, action = its per-encounter decision.",
+
+  "storage": "terrain = two int32 arrays (n, k) of shape (150, 16). Rows = SQLite file holding table (day INTEGER, hour INTEGER, truncated INTEGER), no index, after VACUUM.",
+
+  "predictions": {
+    "Y1_reading_beats_rented": "macro accuracy V12 > RAG at lambda 32 and at lambda 128.",
+    "Y2_position_matters": "macro accuracy V12 > FLAT at lambda 32 and at lambda 128.",
+    "Y3_confound_action": "share of scored COMMUTE encounters acted brief: RAG >= 0.10, V12 <= 0.05, at lambda 32.",
+    "Y4_store_is_not_the_advantage": "SQLT propose_day equals V12 propose_day on every one of the 3,600 streams.",
+    "Y5_storage": "terrain bytes / rows bytes <= 0.5 at lambda 32 and <= 0.15 at lambda 128 (mean over GENUINE seeds 0-49)."
+  },
+  "interpretation_rule": "If Y4 passes, any advantage in Y1/Y2 is a property of the reading discipline (position against own history, persistence, need-driven holding), which SQL can express, not of the store. The store's own claims are then only Y5 (size, rows not retained).",
+  "reporting_rule": "PASS/FAIL as frozen with exact numbers. No change after the first full run."
+}

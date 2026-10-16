@@ -1,0 +1,45 @@
+{
+ "S0": {
+  "honest_control": "PASS",
+  "G1_rewrite": "BREACH",
+  "G1b_rewrite_after_auth": "BREACH",
+  "G2_delete": "BREACH",
+  "G3_self_grant": "BREACH",
+  "G4_replay": "BREACH",
+  "G5_rollback": "BREACH",
+  "G6_tail_forge": "BREACH",
+  "G7_identity_replace": "BREACH"
+ },
+ "S1": {
+  "honest_control": "PASS",
+  "G1_rewrite": "held (anchor mismatch 3)",
+  "G1b_rewrite_after_auth": "held (anchor mismatch 8)",
+  "G2_delete": "held (anchor mismatch 3)",
+  "G3_self_grant": "BREACH",
+  "G4_replay": "BREACH",
+  "G5_rollback": "held (anchor mismatch 5)",
+  "G6_tail_forge": "BREACH",
+  "G7_identity_replace": "held (bad host sig 1)"
+ },
+ "S2": {
+  "honest_control": "PASS",
+  "G1_rewrite": "held (bad auth sig 5)",
+  "G1b_rewrite_after_auth": "held (anchor mismatch 8)",
+  "G2_delete": "held (bad auth sig 4)",
+  "G3_self_grant": "held (bad auth sig 5)",
+  "G4_replay": "held (bad auth sig 9)",
+  "G5_rollback": "held (anchor mismatch 5)",
+  "G6_tail_forge": "BREACH",
+  "G7_identity_replace": "held (bad host sig 1)"
+ },
+ "S2_no_witness": {
+  "G1_rewrite": "held (bad auth sig 5)",
+  "G1b_rewrite_after_auth": "BREACH",
+  "G2_delete": "held (bad auth sig 4)",
+  "G3_self_grant": "held (bad auth sig 5)",
+  "G4_replay": "held (bad auth sig 9)",
+  "G5_rollback": "BREACH",
+  "G6_tail_forge": "BREACH",
+  "G7_identity_replace": "held (bad host sig 1)"
+ }
+}

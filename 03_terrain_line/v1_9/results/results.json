@@ -1,0 +1,263 @@
+{
+  "prereg_sha256": "924d522505c9d398c7776077de6cfee7a1ae66cf551ba9aaa862cd47fad4e6fe",
+  "summary": {
+    "128": {
+      "COLOCATED": {
+        "asked_share": 0.99,
+        "asks_per_owner": 2.453333333333333,
+        "character_proposals": 300,
+        "commute_region_share": 0.19681349578256796,
+        "confirmed": 3993,
+        "dinner_region_share": 0.17619493908153702,
+        "discoveries": 5488,
+        "median_first_ask_day": 78,
+        "regions_asked": 2134
+      },
+      "COMMUTE": {
+        "asked_share": 0.9933333333333333,
+        "asks_per_owner": 1.1133333333333333,
+        "character_proposals": 3,
+        "commute_region_share": 0.8575539568345324,
+        "confirmed": 1318,
+        "dinner_region_share": 0.011510791366906475,
+        "discoveries": 1606,
+        "median_first_ask_day": 79,
+        "regions_asked": 695
+      },
+      "DINNER": {
+        "asked_share": 1.0,
+        "asks_per_owner": 1.1233333333333333,
+        "character_proposals": 0,
+        "commute_region_share": 0.005657708628005658,
+        "confirmed": 1323,
+        "dinner_region_share": 0.8486562942008486,
+        "discoveries": 1590,
+        "median_first_ask_day": 78,
+        "regions_asked": 707
+      },
+      "GENUINE": {
+        "asked_share": 0.9766666666666667,
+        "asks_per_owner": 2.3966666666666665,
+        "character_proposals": 300,
+        "commute_region_share": 0.20583869371598218,
+        "confirmed": 3886,
+        "dinner_region_share": 0.17862444334487879,
+        "discoveries": 5360,
+        "median_first_ask_day": 79,
+        "regions_asked": 2021
+      },
+      "NULL": {
+        "asked_share": 0.0,
+        "asks_per_owner": 0.0,
+        "character_proposals": 0,
+        "commute_region_share": null,
+        "confirmed": 0,
+        "dinner_region_share": null,
+        "discoveries": 10,
+        "median_first_ask_day": null,
+        "regions_asked": 0
+      },
+      "WINDOW": {
+        "asked_share": 0.9566666666666667,
+        "asks_per_owner": 1.3866666666666667,
+        "character_proposals": 25,
+        "commute_region_share": 0.21585609593604263,
+        "confirmed": 1587,
+        "dinner_region_share": 0.1872085276482345,
+        "discoveries": 3547,
+        "median_first_ask_day": 79,
+        "regions_asked": 1501
+      }
+    },
+    "32": {
+      "COLOCATED": {
+        "asked_share": 0.9566666666666667,
+        "asks_per_owner": 1.99,
+        "character_proposals": 149,
+        "commute_region_share": 0.14255091103965703,
+        "confirmed": 1291,
+        "dinner_region_share": 0.16505894962486603,
+        "discoveries": 2630,
+        "median_first_ask_day": 82,
+        "regions_asked": 933
+      },
+      "COMMUTE": {
+        "asked_share": 0.9966666666666667,
+        "asks_per_owner": 1.3566666666666667,
+        "character_proposals": 1,
+        "commute_region_share": 0.7509529860228716,
+        "confirmed": 1364,
+        "dinner_region_share": 0.015247776365946633,
+        "discoveries": 1854,
+        "median_first_ask_day": 81,
+        "regions_asked": 787
+      },
+      "DINNER": {
+        "asked_share": 0.9966666666666667,
+        "asks_per_owner": 1.3133333333333332,
+        "character_proposals": 0,
+        "commute_region_share": 0.013664596273291925,
+        "confirmed": 1406,
+        "dinner_region_share": 0.7428571428571429,
+        "discoveries": 1863,
+        "median_first_ask_day": 82,
+        "regions_asked": 805
+      },
+      "GENUINE": {
+        "asked_share": 0.9666666666666667,
+        "asks_per_owner": 2.0933333333333333,
+        "character_proposals": 158,
+        "commute_region_share": 0.14893617021276595,
+        "confirmed": 1345,
+        "dinner_region_share": 0.1651469098277609,
+        "discoveries": 2706,
+        "median_first_ask_day": 82,
+        "regions_asked": 987
+      },
+      "NULL": {
+        "asked_share": 0.0033333333333333335,
+        "asks_per_owner": 0.0033333333333333335,
+        "character_proposals": 1,
+        "commute_region_share": 0.0,
+        "confirmed": 1,
+        "dinner_region_share": 0.0,
+        "discoveries": 37,
+        "median_first_ask_day": 78,
+        "regions_asked": 1
+      },
+      "WINDOW": {
+        "asked_share": 0.6666666666666666,
+        "asks_per_owner": 0.8333333333333334,
+        "character_proposals": 12,
+        "commute_region_share": 0.18162839248434237,
+        "confirmed": 507,
+        "dinner_region_share": 0.162839248434238,
+        "discoveries": 1624,
+        "median_first_ask_day": 80,
+        "regions_asked": 479
+      }
+    },
+    "8": {
+      "COLOCATED": {
+        "asked_share": 0.66,
+        "asks_per_owner": 1.04,
+        "character_proposals": 12,
+        "commute_region_share": 0.19230769230769232,
+        "confirmed": 539,
+        "dinner_region_share": 0.16968325791855204,
+        "discoveries": 1336,
+        "median_first_ask_day": 91,
+        "regions_asked": 442
+      },
+      "COMMUTE": {
+        "asked_share": 0.7933333333333333,
+        "asks_per_owner": 1.1133333333333333,
+        "character_proposals": 0,
+        "commute_region_share": 0.6937618147448015,
+        "confirmed": 736,
+        "dinner_region_share": 0.0661625708884688,
+        "discoveries": 1317,
+        "median_first_ask_day": 93,
+        "regions_asked": 529
+      },
+      "DINNER": {
+        "asked_share": 0.78,
+        "asks_per_owner": 1.1433333333333333,
+        "character_proposals": 2,
+        "commute_region_share": 0.0658682634730539,
+        "confirmed": 722,
+        "dinner_region_share": 0.7145708582834331,
+        "discoveries": 1302,
+        "median_first_ask_day": 91,
+        "regions_asked": 501
+      },
+      "GENUINE": {
+        "asked_share": 0.6966666666666667,
+        "asks_per_owner": 1.1033333333333333,
+        "character_proposals": 6,
+        "commute_region_share": 0.17708333333333334,
+        "confirmed": 555,
+        "dinner_region_share": 0.22291666666666668,
+        "discoveries": 1399,
+        "median_first_ask_day": 90,
+        "regions_asked": 480
+      },
+      "NULL": {
+        "asked_share": 0.016666666666666666,
+        "asks_per_owner": 0.023333333333333334,
+        "character_proposals": 0,
+        "commute_region_share": 0.1,
+        "confirmed": 10,
+        "dinner_region_share": 0.3,
+        "discoveries": 58,
+        "median_first_ask_day": 118,
+        "regions_asked": 10
+      },
+      "WINDOW": {
+        "asked_share": 0.21333333333333335,
+        "asks_per_owner": 0.24,
+        "character_proposals": 3,
+        "commute_region_share": 0.2,
+        "confirmed": 140,
+        "dinner_region_share": 0.224,
+        "discoveries": 614,
+        "median_first_ask_day": 83,
+        "regions_asked": 125
+      }
+    }
+  },
+  "verdicts": {
+    "AA1_character_untouched": {
+      "detail": {
+        "identical_days": true,
+        "identical_to_frozen_v16_counts": true
+      },
+      "passed": true
+    },
+    "AA2_no_alarm_on_noise": {
+      "detail": {
+        "32": 0.0033333333333333335,
+        "128": 0.0
+      },
+      "passed": true
+    },
+    "AA3_local_patterns_seen": {
+      "detail": {
+        "COMMUTE": 0.9933333333333333,
+        "DINNER": 1.0
+      },
+      "passed": true
+    },
+    "AA4_asks_name_the_place": {
+      "detail": {
+        "commute": 0.8575539568345324,
+        "dinner": 0.8486562942008486
+      },
+      "passed": true
+    },
+    "AA5_burden": {
+      "detail": {
+        "COLOCATED@128": 2.45,
+        "COLOCATED@32": 1.99,
+        "COMMUTE@128": 1.11,
+        "COMMUTE@32": 1.36,
+        "DINNER@128": 1.12,
+        "DINNER@32": 1.31,
+        "GENUINE@128": 2.4,
+        "GENUINE@32": 2.09,
+        "NULL@128": 0.0,
+        "NULL@32": 0.0,
+        "WINDOW@128": 1.39,
+        "WINDOW@32": 0.83
+      },
+      "passed": true
+    },
+    "AA6_real_change_seen": {
+      "detail": {
+        "GENUINE": 0.9766666666666667,
+        "WINDOW": 0.9566666666666667
+      },
+      "passed": true
+    }
+  }
+}

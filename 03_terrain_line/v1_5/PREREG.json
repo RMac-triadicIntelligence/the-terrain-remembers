@@ -1,0 +1,32 @@
+{
+  "artifact": "terrain_vs_scalar_confound_falsifier",
+  "version": "1.5",
+  "date": "2026-10-15",
+  "author": "Rusty McMurray / Soulshine; built by Claude at his direction",
+  "frozen_before_any_v1_5_code": true,
+  "preserves": "v1.1, v1.2, v1.3, v1.4 (receipt f20e86ae...34a8). world.py and v1_readers.py byte-identical to v1.",
+
+  "direction": "Rusty, 2026-10-15: 'record of wrongs' is error tracking, not learning. No penalty of past error, but knowledge of the error, for future consideration and growth when needed.",
+
+  "rule": {
+    "unchanged": "fresh full look at every need (v1.3/v1.4). Every reading is deposited into the question's RECORD and is never deleted.",
+    "no_penalty": "OPERATIONALIZATION BY CLAUDE, flagged: a reading weighs on the present only while the terrain it read is still the present terrain, i.e. while it was taken within the current look's span (day >= d - 41). Older readings stay in the record as knowledge but carry no weight in the crossing. No new parameter: 'present' is the look's own 42-day span.",
+    "crossing": "PROPOSE at a look when the sum of +1 (reads change) and -1 (reads not-yet) over readings in the present span, including this one, is > 0. Otherwise HELD."
+  },
+
+  "experiments": "as v1.4: lambda 32, 128, 8 x 6 families x 300 seeds; probe; BURST b = 5, 8; v1.4 and v1.2 run alongside on identical worlds.",
+
+  "predictions_exact_counts_out_of_300": {
+    "V1_probe": "PROPOSED.",
+    "V2_genuine": "GENUINE >= 173 at lambda 32 (v1.2) and >= 240 at lambda 128.",
+    "V3_positional_confounds": "COMMUTE <= 5 and DINNER <= 5 at lambda 32 and 128.",
+    "V4_difficult_month": "WINDOW <= 28 at lambda 32 and <= 78 at lambda 128 (v1.2).",
+    "V5_null": "NULL <= 15 at lambda 32 and 128.",
+    "V6_action": "macro accuracy >= 0.8516 at lambda 32 and >= 0.8836 at lambda 128 (v1.2).",
+    "V7_information_limit": "COLOCATED vs GENUINE |z| < 3 at lambda 32 and 128.",
+    "V8_cost": "MAIN mean region evaluations <= 0.25 x v1 TERRAIN's.",
+    "V9_burst": "BURST b = 8 false proposals <= 28 of 200 (v1.2).",
+    "V10_learning_recovered": "GENUINE at lambda 32 > v1.4's 95."
+  },
+  "reporting_rule": "PASS/FAIL as frozen with exact counts. No change after the first full run."
+}

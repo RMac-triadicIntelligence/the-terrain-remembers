@@ -1,0 +1,41 @@
+{
+  "artifact": "terrain_vs_scalar_confound_falsifier",
+  "version": "1.8",
+  "date": "2026-10-15",
+  "author": "Rusty McMurray / Soulshine; built by Claude at his direction",
+  "frozen_before_any_v1_8_code": true,
+  "preserves": "v1.1-v1.7 (v1.7 receipt ccc40e13...ce90). world.py and v1_readers.py byte-identical to v1. Full-sight world unchanged.",
+
+  "direction": "Rusty, 2026-10-15, with commons_swarm_v2 as the model: a discovery calls a DIFFERENT member to the SAME place LATER to confirm with its own eyes; an unconfirmed find lapses. No penalty for past error (same morning).",
+
+  "corrections_to_v1_7": [
+    "v1.7's homemaker confirmed on OLDER ground (looked backward); the village witness arrives LATER and looks at the same place forward in time.",
+    "v1.7 deposited -1 for an unconfirmed find (a record of wrongs); in the village an unconfirmed find simply lapses."
+  ],
+
+  "family": {
+    "SCOUT": "unchanged from v1.7: at each need reads the frontier (newest 14 days) against each region's history before the 42-day span; discovery = sign test p < .01 over eligible regions AND pooled frontier z > 2.326. A discovery becomes a PENDING FIND recording its day f, its up-regions, and its baseline (history before f-41). One pending find at a time; discoveries while a find is pending are not new finds.",
+    "HOMEMAKER_WITNESS": "is called to the pending find and arrives at the first need with at least 14 days (one block) of data AFTER the find. It reads the SAME up-regions on days f+1..d only, against the find's own baseline. Confirmed iff the sign test over those regions (eligible) passes p < .01 AND pooled z on that new ground > 2.326. One visit: confirmed, or the find LAPSES.",
+    "HOUSEKEEPER": "keeps the family record. A confirmed find deposits +1. A lapsed find is recorded as knowledge and deposits NOTHING. Only entries within the present 42-day span weigh. The family PROPOSES when the present tally > 0."
+  },
+  "ablations": {
+    "SCOUT_ALONE": "every discovery deposits +1 immediately, no witness (as v1.7's ablation).",
+    "LAPSE_PENALTY": "v1.8 except a lapsed find deposits -1 (a record of wrongs)."
+  },
+
+  "experiments": "lambda 32, 128, 8 x 6 families x 300 seeds; probe; BURST b = 5, 8; v1.7, v1.6, v1.2 alongside on identical worlds.",
+
+  "predictions_exact_counts_out_of_300": {
+    "Z1_probe": "PROPOSED.",
+    "Z2_genuine": "GENUINE >= 158 at lambda 32 (v1.6) and >= 240 at lambda 128.",
+    "Z3_positional_confounds": "COMMUTE <= 5 and DINNER <= 5 at lambda 32 and 128.",
+    "Z4_difficult_month": "WINDOW < v1.7's (29 at lambda 32, 109 at lambda 128).",
+    "Z5_null": "NULL <= 15 at lambda 32 and 128.",
+    "Z6_burst": "BURST b = 8 false proposals <= 5 of 200 (v1.7: 31).",
+    "Z7_action": "macro accuracy > v1.7's (0.8221 at lambda 32, 0.8659 at lambda 128).",
+    "Z8_information_limit": "COLOCATED vs GENUINE |z| < 3 at lambda 32 and 128.",
+    "Z9_no_penalty": "GENUINE at lambda 32: v1.8 > LAPSE_PENALTY.",
+    "Z10_honest_expectation": "DESCRIPTIVE, not scored: a 30-day transient whose find is made early in the window can still be confirmed by a witness arriving 14 days later while the transient is still running. Forward witnessing is expected to cut bursts shorter than the witness delay far more than the difficult month."
+  },
+  "reporting_rule": "PASS/FAIL as frozen with exact counts. No change after the first full run."
+}

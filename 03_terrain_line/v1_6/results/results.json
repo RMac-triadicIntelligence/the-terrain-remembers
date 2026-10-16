@@ -1,0 +1,642 @@
+{
+  "burst_descriptive": {
+    "5": {
+      "v12": 12,
+      "v15": 1,
+      "v16": 1
+    },
+    "8": {
+      "v12": 28,
+      "v15": 1,
+      "v16": 1
+    }
+  },
+  "prereg_sha256": "d88470a7dc03ce6601410ec3b515c78884525b4346391cd18c6cfe0a0e19a0c5",
+  "summary": {
+    "128": {
+      "COLOCATED": {
+        "v1": {
+          "evals": 1212.32,
+          "looks": 25.256666666666668
+        },
+        "v12": {
+          "acc": 0.3846597462514418,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 82.53333333333333,
+          "looks": 2.64,
+          "proposals": 300
+        },
+        "v15": {
+          "acc": 0.491118800461361,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 233.51,
+          "looks": 12.29,
+          "proposals": 300
+        },
+        "v16": {
+          "acc": 0.4897347174163783,
+          "consults": 1596,
+          "crossed_by_reread": 10,
+          "evals": 238.29666666666665,
+          "looks": 12.25,
+          "proposals": 300
+        }
+      },
+      "COMMUTE": {
+        "v1": {
+          "evals": 4085.92,
+          "looks": 85.12333333333333
+        },
+        "v12": {
+          "acc": 0.9889273356401385,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 345.3566666666667,
+          "looks": 1.0566666666666666,
+          "proposals": 4
+        },
+        "v15": {
+          "acc": 0.9923875432525952,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 482.22,
+          "looks": 25.38,
+          "proposals": 3
+        },
+        "v16": {
+          "acc": 0.9923875432525952,
+          "consults": 55,
+          "crossed_by_reread": 0,
+          "evals": 491.18,
+          "looks": 25.38,
+          "proposals": 3
+        }
+      },
+      "DINNER": {
+        "v1": {
+          "evals": 4161.12,
+          "looks": 86.69
+        },
+        "v12": {
+          "acc": 0.9948096885813149,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 353.24,
+          "looks": 1.04,
+          "proposals": 2
+        },
+        "v15": {
+          "acc": 1.0,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 492.48,
+          "looks": 25.92,
+          "proposals": 0
+        },
+        "v16": {
+          "acc": 1.0,
+          "consults": 36,
+          "crossed_by_reread": 0,
+          "evals": 498.6666666666667,
+          "looks": 25.92,
+          "proposals": 0
+        }
+      },
+      "GENUINE": {
+        "v1": {
+          "evals": 1245.76,
+          "looks": 25.953333333333333
+        },
+        "v12": {
+          "acc": 0.6153402537485583,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 82.47,
+          "looks": 2.6033333333333335,
+          "proposals": 299
+        },
+        "v15": {
+          "acc": 0.5106113033448674,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 232.24333333333334,
+          "looks": 12.223333333333333,
+          "proposals": 300
+        },
+        "v16": {
+          "acc": 0.5125720876585929,
+          "consults": 1585,
+          "crossed_by_reread": 16,
+          "evals": 237.78,
+          "looks": 12.166666666666666,
+          "proposals": 300
+        }
+      },
+      "NULL": {
+        "v1": {
+          "evals": 2.56,
+          "looks": 0.05333333333333334
+        },
+        "v12": {
+          "acc": 1.0,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 0.76,
+          "looks": 0.04,
+          "proposals": 0
+        },
+        "v15": {
+          "acc": 1.0,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 0.8233333333333334,
+          "looks": 0.043333333333333335,
+          "proposals": 0
+        },
+        "v16": {
+          "acc": 1.0,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 0.8233333333333334,
+          "looks": 0.043333333333333335,
+          "proposals": 0
+        }
+      },
+      "WINDOW": {
+        "v1": {
+          "evals": 1155.2,
+          "looks": 24.066666666666666
+        },
+        "v12": {
+          "acc": 0.8186851211072664,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 55.2,
+          "looks": 1.8666666666666667,
+          "proposals": 78
+        },
+        "v15": {
+          "acc": 0.9401384083044982,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 155.86333333333334,
+          "looks": 8.203333333333333,
+          "proposals": 25
+        },
+        "v16": {
+          "acc": 0.9401384083044982,
+          "consults": 643,
+          "crossed_by_reread": 0,
+          "evals": 155.86333333333334,
+          "looks": 8.203333333333333,
+          "proposals": 25
+        }
+      }
+    },
+    "32": {
+      "COLOCATED": {
+        "v1": {
+          "evals": 2614.08,
+          "looks": 54.46
+        },
+        "v12": {
+          "acc": 0.6457960644007156,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 150.57,
+          "looks": 2.3833333333333333,
+          "proposals": 180
+        },
+        "v15": {
+          "acc": 0.7633870005963029,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 323.31666666666666,
+          "looks": 17.016666666666666,
+          "proposals": 139
+        },
+        "v16": {
+          "acc": 0.7573047107930829,
+          "consults": 1125,
+          "crossed_by_reread": 13,
+          "evals": 360.70666666666665,
+          "looks": 16.893333333333334,
+          "proposals": 149
+        }
+      },
+      "COMMUTE": {
+        "v1": {
+          "evals": 3550.4,
+          "looks": 73.96666666666667
+        },
+        "v12": {
+          "acc": 1.0,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 290.98,
+          "looks": 1.05,
+          "proposals": 0
+        },
+        "v15": {
+          "acc": 0.9976147883124628,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 430.54,
+          "looks": 22.66,
+          "proposals": 1
+        },
+        "v16": {
+          "acc": 0.9976147883124628,
+          "consults": 29,
+          "crossed_by_reread": 0,
+          "evals": 434.22,
+          "looks": 22.66,
+          "proposals": 1
+        }
+      },
+      "DINNER": {
+        "v1": {
+          "evals": 3518.24,
+          "looks": 73.29666666666667
+        },
+        "v12": {
+          "acc": 1.0,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 289.4266666666667,
+          "looks": 1.05,
+          "proposals": 0
+        },
+        "v15": {
+          "acc": 1.0,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 426.74,
+          "looks": 22.46,
+          "proposals": 0
+        },
+        "v16": {
+          "acc": 1.0,
+          "consults": 20,
+          "crossed_by_reread": 0,
+          "evals": 431.8066666666667,
+          "looks": 22.46,
+          "proposals": 0
+        }
+      },
+      "GENUINE": {
+        "v1": {
+          "evals": 2573.76,
+          "looks": 53.62
+        },
+        "v12": {
+          "acc": 0.32450805008944544,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 156.81,
+          "looks": 2.3833333333333333,
+          "proposals": 173
+        },
+        "v15": {
+          "acc": 0.22110912343470482,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 326.3566666666667,
+          "looks": 17.176666666666666,
+          "proposals": 150
+        },
+        "v16": {
+          "acc": 0.22814549791293978,
+          "consults": 1201,
+          "crossed_by_reread": 16,
+          "evals": 369.66,
+          "looks": 17.033333333333335,
+          "proposals": 158
+        }
+      },
+      "NULL": {
+        "v1": {
+          "evals": 11.52,
+          "looks": 0.24
+        },
+        "v12": {
+          "acc": 0.9976147883124628,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 1.53,
+          "looks": 0.07333333333333333,
+          "proposals": 1
+        },
+        "v15": {
+          "acc": 0.9976147883124628,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 2.3433333333333333,
+          "looks": 0.12333333333333334,
+          "proposals": 1
+        },
+        "v16": {
+          "acc": 0.9976147883124628,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 2.3433333333333333,
+          "looks": 0.12333333333333334,
+          "proposals": 1
+        }
+      },
+      "WINDOW": {
+        "v1": {
+          "evals": 976.32,
+          "looks": 20.34
+        },
+        "v12": {
+          "acc": 0.9359570661896244,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 47.89333333333333,
+          "looks": 1.38,
+          "proposals": 28
+        },
+        "v15": {
+          "acc": 0.9710196779964222,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 127.04666666666667,
+          "looks": 6.6866666666666665,
+          "proposals": 12
+        },
+        "v16": {
+          "acc": 0.9710196779964222,
+          "consults": 207,
+          "crossed_by_reread": 0,
+          "evals": 127.04666666666667,
+          "looks": 6.6866666666666665,
+          "proposals": 12
+        }
+      }
+    },
+    "8": {
+      "COLOCATED": {
+        "v1": {
+          "evals": 1612.48,
+          "looks": 33.593333333333334
+        },
+        "v12": {
+          "acc": 0.9687903320427079,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 101.54666666666667,
+          "looks": 1.2866666666666666,
+          "proposals": 16
+        },
+        "v15": {
+          "acc": 0.9740701630881146,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 216.09333333333333,
+          "looks": 11.373333333333333,
+          "proposals": 12
+        },
+        "v16": {
+          "acc": 0.9740701630881146,
+          "consults": 149,
+          "crossed_by_reread": 0,
+          "evals": 217.85333333333332,
+          "looks": 11.373333333333333,
+          "proposals": 12
+        }
+      },
+      "COMMUTE": {
+        "v1": {
+          "evals": 1532.16,
+          "looks": 31.92
+        },
+        "v12": {
+          "acc": 1.0,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 110.90666666666667,
+          "looks": 0.9666666666666667,
+          "proposals": 0
+        },
+        "v15": {
+          "acc": 1.0,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 219.57666666666665,
+          "looks": 11.556666666666667,
+          "proposals": 0
+        },
+        "v16": {
+          "acc": 1.0,
+          "consults": 16,
+          "crossed_by_reread": 0,
+          "evals": 220.32333333333332,
+          "looks": 11.556666666666667,
+          "proposals": 0
+        }
+      },
+      "DINNER": {
+        "v1": {
+          "evals": 1598.4,
+          "looks": 33.3
+        },
+        "v12": {
+          "acc": 0.9933122140091517,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 113.54666666666667,
+          "looks": 0.9533333333333334,
+          "proposals": 2
+        },
+        "v15": {
+          "acc": 0.9933122140091517,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 224.01,
+          "looks": 11.79,
+          "proposals": 2
+        },
+        "v16": {
+          "acc": 0.9933122140091517,
+          "consults": 23,
+          "crossed_by_reread": 0,
+          "evals": 224.27666666666667,
+          "looks": 11.79,
+          "proposals": 2
+        }
+      },
+      "GENUINE": {
+        "v1": {
+          "evals": 1741.12,
+          "looks": 36.27333333333333
+        },
+        "v12": {
+          "acc": 0.025460518596738237,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 107.93666666666667,
+          "looks": 1.4033333333333333,
+          "proposals": 16
+        },
+        "v15": {
+          "acc": 0.008799718409010912,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 233.63666666666666,
+          "looks": 12.296666666666667,
+          "proposals": 6
+        },
+        "v16": {
+          "acc": 0.008799718409010912,
+          "consults": 176,
+          "crossed_by_reread": 0,
+          "evals": 238.70333333333335,
+          "looks": 12.296666666666667,
+          "proposals": 6
+        }
+      },
+      "NULL": {
+        "v1": {
+          "evals": 30.24,
+          "looks": 0.63
+        },
+        "v12": {
+          "acc": 1.0,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 2.8666666666666667,
+          "looks": 0.08,
+          "proposals": 0
+        },
+        "v15": {
+          "acc": 1.0,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 5.51,
+          "looks": 0.29,
+          "proposals": 0
+        },
+        "v16": {
+          "acc": 1.0,
+          "consults": 2,
+          "crossed_by_reread": 0,
+          "evals": 5.51,
+          "looks": 0.29,
+          "proposals": 0
+        }
+      },
+      "WINDOW": {
+        "v1": {
+          "evals": 370.08,
+          "looks": 7.71
+        },
+        "v12": {
+          "acc": 0.9917869294849232,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 21.253333333333334,
+          "looks": 0.67,
+          "proposals": 4
+        },
+        "v15": {
+          "acc": 0.9930775548515781,
+          "consults": 0,
+          "crossed_by_reread": 0,
+          "evals": 57.19,
+          "looks": 3.01,
+          "proposals": 3
+        },
+        "v16": {
+          "acc": 0.9930775548515781,
+          "consults": 28,
+          "crossed_by_reread": 0,
+          "evals": 57.19,
+          "looks": 3.01,
+          "proposals": 3
+        }
+      }
+    }
+  },
+  "verdicts": {
+    "W10_rereading_grows": {
+      "detail": {
+        "v15": 150,
+        "v16": 158
+      },
+      "passed": true
+    },
+    "W1_probe": {
+      "detail": {
+        "consults": 21,
+        "crossed_by_reread": true,
+        "final_state": "PROPOSED",
+        "looks": 44,
+        "propose_day": 105
+      },
+      "passed": true
+    },
+    "W2_genuine": {
+      "detail": {
+        "128": 300,
+        "32": 158
+      },
+      "passed": false
+    },
+    "W3_positional_confounds": {
+      "detail": {
+        "COMMUTE@128": 3,
+        "COMMUTE@32": 1,
+        "DINNER@128": 0,
+        "DINNER@32": 0
+      },
+      "passed": true
+    },
+    "W4_difficult_month": {
+      "detail": {
+        "128": 25,
+        "32": 12
+      },
+      "passed": true
+    },
+    "W5_null": {
+      "detail": {
+        "128": 0,
+        "32": 1
+      },
+      "passed": true
+    },
+    "W6_action": {
+      "detail": {
+        "128": 0.8890196078431373,
+        "32": 0.8388789505068575
+      },
+      "passed": false
+    },
+    "W7_information_limit": {
+      "detail": {
+        "32": -0.7350470462180374,
+        "128": 0.0
+      },
+      "passed": true
+    },
+    "W8_cost": {
+      "detail": {
+        "evals": 287.63055555555553,
+        "looks_descriptive": 14.309444444444445,
+        "v1_evals": 2207.3866666666668
+      },
+      "passed": true
+    },
+    "W9_burst": {
+      "detail": {
+        "v12": 28,
+        "v15": 1,
+        "v16": 1
+      },
+      "passed": true
+    }
+  }
+}
